@@ -1,0 +1,469 @@
+{
+  "query": "python",
+  "engine": "youtube",
+  "results_count": 23,
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "The Story of Python and how it took over the world | Python: The Documentary",
+      "link": "https://www.youtube.com/watch?v=GfH4QL4VqJ0",
+      "video_id": "GfH4QL4VqJ0",
+      "channel": {
+        "name": "CultRepo ",
+        "link": "https://www.youtube.com/channel/UCsUalyRg43M8D60mtHe6YcA",
+        "thumbnail": "https://yt3.ggpht.com/P2Ey1tJoDU5pTVRuoT7a1HZ_-dNCJB977U_STsHVhLT8DEdydgCk0f_uDYA4WFnpDpWrdZqvyVM=s68-c-k-c0x00ffffff-no-rj",
+        "verified": false
+      },
+      "views": "1.1M views",
+      "published": "10 months ago",
+      "length": "1:24:05",
+      "description": null,
+      "thumbnail": {
+        "static": "https://i.ytimg.com/vi/GfH4QL4VqJ0/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDw5nTMyUcRJBugl4ao4BYgx34Wig",
+        "rich": "https://i.ytimg.com/an_webp/GfH4QL4VqJ0/mqdefault_6s.webp?du=3000&sqp=CMzT5NIG&rs=AOn4CLAlJ900NLFjb-NxUwDwW_rQJaeXhg"
+      }
+    },
+    {
+      "position": 2,
+      "title": "Lecture 1: Introduction to CS and Programming Using Python",
+      "link": "https://www.youtube.com/watch?v=xAcTmDO6NTI",
+      "video_id": "xAcTmDO6NTI",
+      "channel": {
+        "name": "MIT OpenCourseWare",
+        "link": "https://www.youtube.com/channel/UCEBb1b_L6zDS3xTUrIALZOw",
+        "thumbnail": "https://yt3.ggpht.com/swNtJDBP8xHP_zwrbL4tCUQt02B-7Mr8XggFMBjANHn_Q5aUtPmxPs8f8Ag3wO2O-rJpsQQGpA=s68-c-k-c0x00ffffff-no-rj",
+        "verified": false
+      },
+      "views": "2.1M views",
+      "published": "2 years ago",
+      "length": "1:03:30",
+      "description": null,
+      "thumbnail": {
+        "static": "https://i.ytimg.com/vi/xAcTmDO6NTI/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLD906YjPWEwtvB_8GPZNubdhRL8uQ",
+        "rich": "https://i.ytimg.com/an_webp/xAcTmDO6NTI/mqdefault_6s.webp?du=3000&sqp=COy25NIG&rs=AOn4CLAXPxHQc9bwmMpK3OZBjxd-aa-PNg"
+      }
+    },
+    {
+      "position": 3,
+      "title": "10 Important Python Concepts In 20 Minutes",
+      "link": "https://www.youtube.com/watch?v=Gx5qb1uHss4",
+      "video_id": "Gx5qb1uHss4",
+      "channel": {
+        "name": "Indently",
+        "link": "https://www.youtube.com/channel/UCuudpdbKmQWq2PPzYgVCWlA",
+        "thumbnail": "https://yt3.ggpht.com/68ZQuFvv8mZTJQD65biYl2BWjKKMxkDS5k_sIdAGpRY9-p1vYsqwE1jNMTDEveZoSpkfOpKG=s68-c-k-c0x00ffffff-no-rj",
+        "verified": false
+      },
+      "views": "1.4M views",
+      "published": "1 year ago",
+      "length": "18:49",
+      "description": null,
+      "thumbnail": {
+        "static": "https://i.ytimg.com/vi/Gx5qb1uHss4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAn5kTPAvmTgCR5bdLmjoCt3zmYXA",
+        "rich": "https://i.ytimg.com/an_webp/Gx5qb1uHss4/mqdefault_6s.webp?du=3000&sqp=CITI5NIG&rs=AOn4CLB6pyvP1fP5Is0_g5inpNKpZZ5dQg"
+      }
+    },
+    {
+      "position": 4,
+      "title": "Python Full Course for free 🐍",
+      "link": "https://www.youtube.com/watch?v=ix9cRaBkVe0",
+      "video_id": "ix9cRaBkVe0",
+      "channel": {
+        "name": "Bro Code",
+        "link": "https://www.youtube.com/channel/UC4SVo0Ue36XCfOyb5Lh1viQ",
+        "thumbnail": "https://yt3.ggpht.com/ytc/AIdro_mPFVsxROj1dOtTWc9iNBwDYV4z42Q8LPokBSewiW9pCSg=s68-c-k-c0x00ffffff-no-rj",
+        "verified": false
+      },
+      "views": "10M views",
+      "published": "1 year ago",
+      "length": "12:00:00",
+      "description": null,
+      "thumbnail": {
+        "static": "https://i.ytimg.com/vi/ix9cRaBkVe0/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLC7lm7YGt5bE2Sc6ecVvZzQ9JxOhw",
+        "rich": "https://i.ytimg.com/an_webp/ix9cRaBkVe0/mqdefault_6s.webp?du=3000&sqp=CKnX5NIG&rs=AOn4CLAiq5649pgG-I9ZPG318TSl419IfQ"
+      }
+    },
+    {
+      "position": 5,
+      "title": "Python Full Course for Beginners",
+      "link": "https://www.youtube.com/watch?v=K5KVEU3aaeQ",
+      "video_id": "K5KVEU3aaeQ",
+      "channel": {
+        "name": "Programming with Mosh",
+        "link": "https://www.youtube.com/channel/UCWv7vMbMWH4-V0ZXdmDpPBA",
+        "thumbnail": "https://yt3.ggpht.com/HCv0fXFEEcD0HRyF0_qR1K7b7qO3KCzmIoyH1DEJYB94CIUFhIE5i2t2IDIPX97W1-DK4hegww=s68-c-k-c0x00ffffff-no-rj",
+        "verified": false
+      },
+      "views": "6.9M views",
+      "published": "1 year ago",
+      "length": "2:02:21",
+      "description": null,
+      "thumbnail": {
+        "static": "https://i.ytimg.com/vi/K5KVEU3aaeQ/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBlolBvoXNSl0vKMZZ74BjD-J-1Yw",
+        "rich": "https://i.ytimg.com/an_webp/K5KVEU3aaeQ/mqdefault_6s.webp?du=3000&sqp=CMjK5NIG&rs=AOn4CLBudCVIWcjyGxoFlGsz0GuosQEJsQ"
+      }
+    },
+    {
+      "position": 6,
+      "title": "Please Master This MAGIC Python Feature... 🪄",
+      "link": "https://www.youtube.com/watch?v=qqp6QN20CpE",
+      "video_id": "qqp6QN20CpE",
+      "channel": {
+        "name": "Tech With Tim",
+        "link": "https://www.youtube.com/channel/UC4JX40jDee_tINbkjycV4Sg",
+        "thumbnail": "https://yt3.ggpht.com/ytc/AIdro_k15oXl74WcnpdL-uVBv6IHBgAfXEEnpUiS-IoEyV1auyY=s68-c-k-c0x00ffffff-no-rj",
+        "verified": false
+      },
+      "views": "751K views",
+      "published": "1 year ago",
+      "length": "25:10",
+      "description": null,
+      "thumbnail": {
+        "static": "https://i.ytimg.com/vi/qqp6QN20CpE/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCeu05jftwNsOURFSdK37H0mAywuA",
+        "rich": "https://i.ytimg.com/an_webp/qqp6QN20CpE/mqdefault_6s.webp?du=3000&sqp=CM_S5NIG&rs=AOn4CLDUEwYomG9UAANlblzVotoe1HZIzg"
+      }
+    },
+    {
+      "position": 7,
+      "title": "Python Full Course for Beginners",
+      "link": "https://www.youtube.com/watch?v=_uQrJ0TkZlc",
+      "video_id": "_uQrJ0TkZlc",
+      "channel": {
+        "name": "Programming with Mosh",
+        "link": "https://www.youtube.com/channel/UCWv7vMbMWH4-V0ZXdmDpPBA",
+        "thumbnail": "https://yt3.ggpht.com/HCv0fXFEEcD0HRyF0_qR1K7b7qO3KCzmIoyH1DEJYB94CIUFhIE5i2t2IDIPX97W1-DK4hegww=s68-c-k-c0x00ffffff-no-rj",
+        "verified": false
+      },
+      "views": "48M views",
+      "published": "7 years ago",
+      "length": "6:14:07",
+      "description": null,
+      "thumbnail": {
+        "static": "https://i.ytimg.com/vi/_uQrJ0TkZlc/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLC7WhCVi8Cw6N5lI5BPCH3wznm58g",
+        "rich": "https://i.ytimg.com/an_webp/_uQrJ0TkZlc/mqdefault_6s.webp?du=3000&sqp=CJLF5NIG&rs=AOn4CLBZ4Hd79_IHpAnDcqgCH09JY-P-wA"
+      }
+    },
+    {
+      "position": 8,
+      "title": "Python Tutorial for Beginners - Learn Python in 5 Hours [FULL COURSE]",
+      "link": "https://www.youtube.com/watch?v=t8pPdKYpowI",
+      "video_id": "t8pPdKYpowI",
+      "channel": {
+        "name": "TechWorld with Nana",
+        "link": "https://www.youtube.com/channel/UCdngmbVKX1Tgre699-XLlUA",
+        "thumbnail": "https://yt3.ggpht.com/ZAuMKdMcyV3mhX857oCGWzQAQ4AqZhiDIO76MTC_DqckrujSNg5Mh2AQh6ngWYv7bzfu7TBoj24=s68-c-k-c0x00ffffff-no-rj",
+        "verified": false
+      },
+      "views": "6.7M views",
+      "published": "5 years ago",
+      "length": "5:31:30",
+      "description": null,
+      "thumbnail": {
+        "static": "https://i.ytimg.com/vi/t8pPdKYpowI/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDMG2PTM5EIHTfVRG3sE1Mny__pWQ",
+        "rich": "https://i.ytimg.com/an_webp/t8pPdKYpowI/mqdefault_6s.webp?du=3000&sqp=CMrZ5NIG&rs=AOn4CLDUkDwU-KaF0stQBPYPBE1bIkLtBQ"
+      }
+    },
+    {
+      "position": 9,
+      "title": "Junior vs senior python developer 🐍 | #python #coding #programming #shorts  @Codingknowledge-yt",
+      "link": "https://www.youtube.com/watch?v=Mf9GCn_LsUI",
+      "video_id": "Mf9GCn_LsUI",
+      "channel": {
+        "name": "Coding knowledge ",
+        "link": "https://www.youtube.com/channel/UCxTlZrcW5kbq86ClNxzf5Tw",
+        "thumbnail": "https://yt3.ggpht.com/4fXbBkz-GcdlfXWlVIjq7mkJd7jTUdW6lUwfdJxJhSp6QGSnKT-9u1O13QZNH99nHD2_cn_YiQ=s68-c-k-c0x00ffffff-no-rj",
+        "verified": false
+      },
+      "views": "3.1M views",
+      "published": "1 year ago",
+      "length": "0:18",
+      "description": null,
+      "thumbnail": {
+        "static": "https://i.ytimg.com/vi/Mf9GCn_LsUI/oardefault.jpg?sqp=-oaymwEbCJUDEOAESFqQAgHyq4qpAwoIARUAAIhCyAEB&rs=AOn4CLAbVpVg-Ha0cvX2MPsxXJR2F5BPOA&usqp=CCk",
+        "rich": null
+      }
+    },
+    {
+      "position": 10,
+      "title": "Harvard CS50’s Introduction to Programming with Python – Full University Course",
+      "link": "https://www.youtube.com/watch?v=nLRL_NcnK-4",
+      "video_id": "nLRL_NcnK-4",
+      "channel": {
+        "name": "freeCodeCamp.org and CS50",
+        "link": "https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ",
+        "thumbnail": "https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s68-c-k-c0x00ffffff-no-rj",
+        "verified": false
+      },
+      "views": "8.6M views",
+      "published": "3 years ago",
+      "length": "15:57:48",
+      "description": null,
+      "thumbnail": {
+        "static": "https://i.ytimg.com/vi/nLRL_NcnK-4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDxIZaciSI8V36_Hl0aGKW9Ubrl0w",
+        "rich": "https://i.ytimg.com/an_webp/nLRL_NcnK-4/mqdefault_6s.webp?du=3000&sqp=CM7j5NIG&rs=AOn4CLARiXN8YhdMBJcQQKgwSs8zpZGAAw"
+      }
+    },
+    {
+      "position": 11,
+      "title": "5 Good Python Habits",
+      "link": "https://www.youtube.com/watch?v=I72uD8ED73U",
+      "video_id": "I72uD8ED73U",
+      "channel": {
+        "name": "Indently",
+        "link": "https://www.youtube.com/channel/UCuudpdbKmQWq2PPzYgVCWlA",
+        "thumbnail": "https://yt3.ggpht.com/68ZQuFvv8mZTJQD65biYl2BWjKKMxkDS5k_sIdAGpRY9-p1vYsqwE1jNMTDEveZoSpkfOpKG=s68-c-k-c0x00ffffff-no-rj",
+        "verified": false
+      },
+      "views": "1.1M views",
+      "published": "2 years ago",
+      "length": "17:35",
+      "description": null,
+      "thumbnail": {
+        "static": "https://i.ytimg.com/vi/I72uD8ED73U/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAbYbxG3_nYFx0QLBKM11gVemTWCA",
+        "rich": "https://i.ytimg.com/an_webp/I72uD8ED73U/mqdefault_6s.webp?du=3000&sqp=CK7W5NIG&rs=AOn4CLA6h9WMMZzmAJ8zkjKf5QgBOZJiWw"
+      }
+    },
+    {
+      "position": 12,
+      "title": "Learn Python - Full Course for Beginners [Tutorial]",
+      "link": "https://www.youtube.com/watch?v=rfscVS0vtbw",
+      "video_id": "rfscVS0vtbw",
+      "channel": {
+        "name": "freeCodeCamp.org",
+        "link": "https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ",
+        "thumbnail": "https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s68-c-k-c0x00ffffff-no-rj",
+        "verified": false
+      },
+      "views": "48M views",
+      "published": "8 years ago",
+      "length": "4:26:52",
+      "description": null,
+      "thumbnail": {
+        "static": "https://i.ytimg.com/vi/rfscVS0vtbw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDDir0FMITH0w8n_bHd-_2YCKLlgw",
+        "rich": "https://i.ytimg.com/an_webp/rfscVS0vtbw/mqdefault_6s.webp?du=3000&sqp=CMjm5NIG&rs=AOn4CLANAYyXQl549bH-rsktJ63tQOyx8w"
+      }
+    },
+    {
+      "position": 13,
+      "title": "How I Would Learn Python FAST (if I could start over)",
+      "link": "https://www.youtube.com/watch?v=ywjyvKzc8e4",
+      "video_id": "ywjyvKzc8e4",
+      "channel": {
+        "name": "Andrew Codesmith",
+        "link": "https://www.youtube.com/channel/UCcgNiiErDGHICbNYtuyxW4A",
+        "thumbnail": "https://yt3.ggpht.com/cpC6mbYz6yqe73qDLsnMCw9JyyAc9kUuNqDSdniapD55sC3E_nXCOff3UMcaRc7YdYH-Qv8koA=s68-c-k-c0x00ffffff-no-rj",
+        "verified": false
+      },
+      "views": "388K views",
+      "published": "3 months ago",
+      "length": "10:33",
+      "description": null,
+      "thumbnail": {
+        "static": "https://i.ytimg.com/vi/ywjyvKzc8e4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBqxQ99xEd7CTDKZSpIznlH3Bvc0w",
+        "rich": "https://i.ytimg.com/an_webp/ywjyvKzc8e4/mqdefault_6s.webp?du=3000&sqp=CJrT5NIG&rs=AOn4CLBK3dH4z_nqtpagr7qrN5w1DVH_0Q"
+      }
+    },
+    {
+      "position": 14,
+      "title": "Using EVERY Part of the Python with Dusty Crum! | The BOB & TOM Show",
+      "link": "https://www.youtube.com/watch?v=QkR43iEKxHY",
+      "video_id": "QkR43iEKxHY",
+      "channel": {
+        "name": "The BOB & TOM Show",
+        "link": "https://www.youtube.com/channel/UCRizlNzRDzYxS3NgDQXtueQ",
+        "thumbnail": "https://yt3.ggpht.com/ytc/AIdro_m9DcsUbZH2bNPMysit1MR88TgqbGpVREPv04o8S1YeqJc=s68-c-k-c0x00ffffff-no-rj",
+        "verified": false
+      },
+      "views": "161 views",
+      "published": "1 hour ago",
+      "length": "11:10",
+      "description": null,
+      "thumbnail": {
+        "static": "https://i.ytimg.com/vi/QkR43iEKxHY/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAXgGZY_DNV1vIjnc5Ra1cLmT4paw",
+        "rich": "https://i.ytimg.com/an_webp/QkR43iEKxHY/mqdefault_6s.webp?du=3000&sqp=CKjA5NIG&rs=AOn4CLChxw5mqpRZe-6XLAh71dCBfBwJNg"
+      }
+    },
+    {
+      "position": 15,
+      "title": "Python's worst features (IMO)",
+      "link": "https://www.youtube.com/watch?v=uM9Jti8a9g4",
+      "video_id": "uM9Jti8a9g4",
+      "channel": {
+        "name": "Indently",
+        "link": "https://www.youtube.com/channel/UCuudpdbKmQWq2PPzYgVCWlA",
+        "thumbnail": "https://yt3.ggpht.com/68ZQuFvv8mZTJQD65biYl2BWjKKMxkDS5k_sIdAGpRY9-p1vYsqwE1jNMTDEveZoSpkfOpKG=s68-c-k-c0x00ffffff-no-rj",
+        "verified": false
+      },
+      "views": "9.1K views",
+      "published": "3 days ago",
+      "length": "6:20",
+      "description": null,
+      "thumbnail": {
+        "static": "https://i.ytimg.com/vi/uM9Jti8a9g4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCBRSJUmXBrpr_m_qywKUfuNfRjEQ",
+        "rich": null
+      }
+    },
+    {
+      "position": 16,
+      "title": "Making the Same Game in Python, Lua, and JavaScript",
+      "link": "https://www.youtube.com/watch?v=KPq6VswMsPY",
+      "video_id": "KPq6VswMsPY",
+      "channel": {
+        "name": "Goodgis",
+        "link": "https://www.youtube.com/channel/UCdXUwmzmhitTRqtPLazyetg",
+        "thumbnail": "https://yt3.ggpht.com/qPTyBPuaQhxVSVpCS5iMn-kA6EbA60IEa6aQYTKBV5rNsue8ydRV8Q1pztzYNPjM1GzdVU2_NQ=s68-c-k-c0x00ffffff-no-rj",
+        "verified": false
+      },
+      "views": "686K views",
+      "published": "1 year ago",
+      "length": "10:48",
+      "description": null,
+      "thumbnail": {
+        "static": "https://i.ytimg.com/vi/KPq6VswMsPY/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDwWOnevRLInU3SBc0MJbdV_uZxfQ",
+        "rich": "https://i.ytimg.com/an_webp/KPq6VswMsPY/mqdefault_6s.webp?du=3000&sqp=CLDZ5NIG&rs=AOn4CLA0cftFhoEaOfcXPBFa5eRg5Rc4sg"
+      }
+    },
+    {
+      "position": 17,
+      "title": "Python for AI - Full Beginner Course",
+      "link": "https://www.youtube.com/watch?v=ygXn5nV5qFc",
+      "video_id": "ygXn5nV5qFc",
+      "channel": {
+        "name": "Dave Ebbelaar",
+        "link": "https://www.youtube.com/channel/UCn8ujwUInbJkBhffxqAPBVQ",
+        "thumbnail": "https://yt3.ggpht.com/ctxvWKOxrhFCusS9IsVCwpDiN71L9AgXZy_jqeP-F3oNA6_TdXzOrp28xiHDMQWFhCw7eSIX=s68-c-k-c0x00ffffff-no-rj",
+        "verified": false
+      },
+      "views": "1.1M views",
+      "published": "8 months ago",
+      "length": "5:15:31",
+      "description": null,
+      "thumbnail": {
+        "static": "https://i.ytimg.com/vi/ygXn5nV5qFc/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLD9HG5B6A76ejcsoTM6XOAO1ZnvlQ",
+        "rich": "https://i.ytimg.com/an_webp/ygXn5nV5qFc/mqdefault_6s.webp?du=3000&sqp=CIPJ5NIG&rs=AOn4CLCt3wBVUBndB-o4eC_b4cfUY1KEgA"
+      }
+    },
+    {
+      "position": 18,
+      "title": "Python for Coding Interviews - Everything you need to Know",
+      "link": "https://www.youtube.com/watch?v=0K_eZGS5NsU",
+      "video_id": "0K_eZGS5NsU",
+      "channel": {
+        "name": "NeetCode",
+        "link": "https://www.youtube.com/channel/UC_mYaQAE6-71rjSN6CeCA-g",
+        "thumbnail": "https://yt3.ggpht.com/25g11wkEmSb_ZTC6M5-uMklwAHmFa9rfZN7TzS9WLsfPgXFHoLaegwKwBqqah7pPhQhSafMx=s68-c-k-c0x00ffffff-no-rj",
+        "verified": false
+      },
+      "views": "904K views",
+      "published": "3 years ago",
+      "length": "26:18",
+      "description": null,
+      "thumbnail": {
+        "static": "https://i.ytimg.com/vi/0K_eZGS5NsU/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCPrYLqkj1zsU8T-puvnknDYeQOsg",
+        "rich": "https://i.ytimg.com/an_webp/0K_eZGS5NsU/mqdefault_6s.webp?du=3000&sqp=COfT5NIG&rs=AOn4CLBPjYDIjR0Pz9qoTHjau6h5Z3_O0Q"
+      }
+    },
+    {
+      "position": 19,
+      "title": "👩‍💻 Python for Beginners Tutorial",
+      "link": "https://www.youtube.com/watch?v=b093aqAZiPU",
+      "video_id": "b093aqAZiPU",
+      "channel": {
+        "name": "Kevin Stratvert",
+        "link": "https://www.youtube.com/channel/UCfJT_eYDTmDE-ovKaxVE1ig",
+        "thumbnail": "https://yt3.ggpht.com/FHaircC3fnPqOhk3M4POJQlPF2_yVnCj5W60SNbFL_zK5jzmJ5mNyFVaoLKZufC4uPo4WP8gQw=s68-c-k-c0x00ffffff-no-rj",
+        "verified": false
+      },
+      "views": "4.5M views",
+      "published": "5 years ago",
+      "length": "1:03:21",
+      "description": null,
+      "thumbnail": {
+        "static": "https://i.ytimg.com/vi/b093aqAZiPU/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBPSgXmCJG4xs0Na9bBzOcV-4339Q",
+        "rich": "https://i.ytimg.com/an_webp/b093aqAZiPU/mqdefault_6s.webp?du=3000&sqp=CKbP5NIG&rs=AOn4CLCoitFlRFK1KRfZE7EZQ0z2IOyYow"
+      }
+    },
+    {
+      "position": 20,
+      "title": "GOT7 'PYTHON' MV",
+      "link": "https://www.youtube.com/watch?v=4d5C_PQl8Tg",
+      "video_id": "4d5C_PQl8Tg",
+      "channel": {
+        "name": "GOT7",
+        "link": "https://www.youtube.com/channel/UCNtZPzvkjjB3EuPMNY71cmA",
+        "thumbnail": "https://yt3.ggpht.com/PCkOsBwjGjAryn08wxr78pn9JyhwV8w_hSwwEpwYYbj1dkJLH23MMKw02vYyYJ6b4gFYOLji=s68-c-k-c0x00ffffff-no-rj",
+        "verified": false
+      },
+      "views": "35M views",
+      "published": "1 year ago",
+      "length": "2:50",
+      "description": null,
+      "thumbnail": {
+        "static": "https://i.ytimg.com/vi/4d5C_PQl8Tg/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCBuO0J0vjzvKTP_7QqXXxglXPhhw",
+        "rich": "https://i.ytimg.com/an_webp/4d5C_PQl8Tg/mqdefault_6s.webp?du=3000&sqp=CMDA5NIG&rs=AOn4CLDwxADFWnjG1kQwVzqkWXt8TqUCIQ"
+      }
+    },
+    {
+      "position": 21,
+      "title": "Python Full Course for Beginners (13 Hours) – From Zero to Hero",
+      "link": "https://www.youtube.com/watch?v=Rq5gJVxz55Q",
+      "video_id": "Rq5gJVxz55Q",
+      "channel": {
+        "name": "Data with Baraa",
+        "link": "https://www.youtube.com/channel/UC8_RSKwbU1OmZWNEoLV1tQg",
+        "thumbnail": "https://yt3.ggpht.com/dqs3pZO_8d4K2zp2ebhb2klV_zOqfNrNTViTHggfJPrvMVCRvypJW8BGksEdQqYTPWdai3wUDg=s68-c-k-c0x00ffffff-no-rj",
+        "verified": false
+      },
+      "views": "688K views",
+      "published": "4 months ago",
+      "length": "13:02:53",
+      "description": null,
+      "thumbnail": {
+        "static": "https://i.ytimg.com/vi/Rq5gJVxz55Q/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBoK87a0aS-0N6l894vSIpAKjbosg",
+        "rich": "https://i.ytimg.com/an_webp/Rq5gJVxz55Q/mqdefault_6s.webp?du=3000&sqp=CKjA5NIG&rs=AOn4CLAND-vmVjnupvENlGFV8lvpsBfaqQ"
+      }
+    },
+    {
+      "position": 22,
+      "title": "Python As Fast as Possible - Learn Python in ~75 Minutes",
+      "link": "https://www.youtube.com/watch?v=VchuKL44s6E",
+      "video_id": "VchuKL44s6E",
+      "channel": {
+        "name": "Tech With Tim",
+        "link": "https://www.youtube.com/channel/UC4JX40jDee_tINbkjycV4Sg",
+        "thumbnail": "https://yt3.ggpht.com/ytc/AIdro_k15oXl74WcnpdL-uVBv6IHBgAfXEEnpUiS-IoEyV1auyY=s68-c-k-c0x00ffffff-no-rj",
+        "verified": false
+      },
+      "views": "2.2M views",
+      "published": "5 years ago",
+      "length": "1:19:41",
+      "description": null,
+      "thumbnail": {
+        "static": "https://i.ytimg.com/vi/VchuKL44s6E/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBSEJKn5WjnImhkRW1bz3CwM9vt7w",
+        "rich": "https://i.ytimg.com/an_webp/VchuKL44s6E/mqdefault_6s.webp?du=3000&sqp=CIzC5NIG&rs=AOn4CLDdR6SiXc77M2YscxZV7uQBGGlj_w"
+      }
+    },
+    {
+      "position": 23,
+      "title": "you need to learn Python RIGHT NOW!! // EP 1",
+      "link": "https://www.youtube.com/watch?v=mRMmlo_Uqcs",
+      "video_id": "mRMmlo_Uqcs",
+      "channel": {
+        "name": "NetworkChuck",
+        "link": "https://www.youtube.com/channel/UC9x0AN7BWHpCDHSm9NiJFJQ",
+        "thumbnail": "https://yt3.ggpht.com/ytc/AIdro_k01-_GpvVZW8w4ULtaQaa55ls8aMf2a5dXhIe56pjMvG0=s68-c-k-c0x00ffffff-no-rj",
+        "verified": false
+      },
+      "views": "2.9M views",
+      "published": "4 years ago",
+      "length": "17:42",
+      "description": null,
+      "thumbnail": {
+        "static": "https://i.ytimg.com/vi/mRMmlo_Uqcs/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBkQg4vUcbb6hlbNEVJ9IAUGvEhyw",
+        "rich": "https://i.ytimg.com/an_webp/mRMmlo_Uqcs/mqdefault_6s.webp?du=3000&sqp=CI7c5NIG&rs=AOn4CLAeBhMtOvUNJR4rT7xTFHnD7k1BMA"
+      }
+    }
+  ],
+  "ads": [],
+  "ads_count": 0
+}

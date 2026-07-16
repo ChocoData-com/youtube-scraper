@@ -1,0 +1,180 @@
+{
+  "video_id": "x7X9w_GIm1s",
+  "url": "https://www.youtube.com/watch?v=x7X9w_GIm1s",
+  "type": "video",
+  "title": "Python in 100 Seconds",
+  "description": "Python is arguably the world's most popular programming language. It is easy to learn, yet suitable in professional software like web applications, data science, and server-side scripts. https://fireship.io/tags/python/\n\n#python #programming #100SecondsOfCode\n\n🔗 Resources\n\nPython Docs https://docs.python.org/3/\nPython TIOBE Ranking https://www.infoworld.com/article/3636789/python-tops-tiobe-language-index.html\n\n🔥 Get More Content - Upgrade to PRO\n\nUpgrade to Fireship PRO at https://fireship.io/pro\nUse code lORhwXd2 for 25% off your first payment. \n\n🎨 My Editor Settings\n\n- Atom One Dark \n- vscode-icons\n- Fira Code Font\n\n🔖 Topics Covered\n\n- Is YouTube built with Python?\n- Is Python Strongly typed?\n- Python syntax and indentation rules\n- When was python released?",
+  "view_count": 3060670,
+  "view_count_text": "3060670",
+  "like_count": 115982,
+  "comment_count": null,
+  "duration_seconds": 143,
+  "keywords": [
+    "webdev",
+    "app development",
+    "lesson",
+    "tutorial"
+  ],
+  "category": "Science & Technology",
+  "is_live": false,
+  "is_family_safe": true,
+  "is_private": false,
+  "allow_ratings": true,
+  "publish_date": "2021-10-25T08:19:28-07:00",
+  "upload_date": "2021-10-25T08:19:28-07:00",
+  "channel_id": "UCsBjURrPoezykLs9EqgamOA",
+  "channel_name": "Fireship",
+  "channel_handle": "http://www.youtube.com/@Fireship",
+  "channel_url": "https://www.youtube.com/channel/UCsBjURrPoezykLs9EqgamOA",
+  "thumbnail": "https://i.ytimg.com/vi/x7X9w_GIm1s/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCrVjDSaMXGhMyxCQgh8JEAbsBJcw",
+  "thumbnails": [
+    {
+      "url": "https://i.ytimg.com/vi/x7X9w_GIm1s/default.jpg",
+      "width": 120,
+      "height": 90
+    },
+    {
+      "url": "https://i.ytimg.com/vi/x7X9w_GIm1s/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+    },
+    {
+      "url": "https://i.ytimg.com/vi/x7X9w_GIm1s/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+    },
+    {
+      "url": "https://i.ytimg.com/vi/x7X9w_GIm1s/sddefault.jpg",
+      "width": 640,
+      "height": 480
+    },
+    {
+      "url": "https://i.ytimg.com/vi/x7X9w_GIm1s/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCrVjDSaMXGhMyxCQgh8JEAbsBJcw",
+      "width": 686,
+      "height": 386
+    }
+  ],
+  "related": [
+    {
+      "position": 1,
+      "id": "l9AzO1FMgM8",
+      "title": "Java in 100 Seconds",
+      "url": "https://www.youtube.com/watch?v=l9AzO1FMgM8",
+      "thumbnail": "https://i.ytimg.com/vi/l9AzO1FMgM8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAtFYjsSas389w4jX_BdgYl1vncmA",
+      "channel": "Fireship",
+      "views": "1.6M views",
+      "published": null
+    },
+    {
+      "position": 2,
+      "id": "ehTIhQpj9ys",
+      "title": "10 regrets of experienced programmers",
+      "url": "https://www.youtube.com/watch?v=ehTIhQpj9ys",
+      "thumbnail": "https://i.ytimg.com/vi/ehTIhQpj9ys/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLA6pqzz5oC2Zya-8cy6tTrcR0Q-_g",
+      "channel": "Fireship",
+      "views": "2.1M views",
+      "published": null
+    },
+    {
+      "position": 3,
+      "id": "KPq6VswMsPY",
+      "title": "Making the Same Game in Python, Lua, and JavaScript",
+      "url": "https://www.youtube.com/watch?v=KPq6VswMsPY",
+      "thumbnail": "https://i.ytimg.com/vi/KPq6VswMsPY/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDwWOnevRLInU3SBc0MJbdV_uZxfQ",
+      "channel": "Goodgis",
+      "views": "686K views",
+      "published": null
+    },
+    {
+      "position": 4,
+      "id": "pEfrdAtAmqk",
+      "title": "God-Tier Developer Roadmap",
+      "url": "https://www.youtube.com/watch?v=pEfrdAtAmqk",
+      "thumbnail": "https://i.ytimg.com/vi/pEfrdAtAmqk/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLA-NLRBxEErWbgYg0JjtB_bazxqgA",
+      "channel": "Fireship",
+      "views": "8.3M views",
+      "published": null
+    },
+    {
+      "position": 5,
+      "id": "741nZL852HQ",
+      "title": "The Riskiest Moment of the AI Bubble",
+      "url": "https://www.youtube.com/watch?v=741nZL852HQ",
+      "thumbnail": "https://i.ytimg.com/vi/741nZL852HQ/hq720_custom_1.jpg?sqp=CLzp5NIG-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLA-e6oMh1l8Aq5592kFSqwK0UasXw",
+      "channel": "Mark Tilbury Economics",
+      "views": "178K views",
+      "published": null
+    },
+    {
+      "position": 6,
+      "id": "th-0rmRYBSg",
+      "title": "Why Ancient Humans Went From Black to White?",
+      "url": "https://www.youtube.com/watch?v=th-0rmRYBSg",
+      "thumbnail": "https://i.ytimg.com/vi/th-0rmRYBSg/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCUWRN-u94qSToNVQb3Ugn4loXRvQ",
+      "channel": "Mack and 2 more",
+      "views": "809K views",
+      "published": null
+    },
+    {
+      "position": 7,
+      "id": "FLcrvMfHUJM",
+      "title": "MIT Explains the 12 Possible Endings for AI",
+      "url": "https://www.youtube.com/watch?v=FLcrvMfHUJM",
+      "thumbnail": "https://i.ytimg.com/vi/FLcrvMfHUJM/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBVzRVUcHwFO02vygInK19p_QIZ3g",
+      "channel": "Species | Documenting AGI",
+      "views": "6.4M views",
+      "published": null
+    },
+    {
+      "position": 8,
+      "id": "dp4WLiQ7gxs",
+      "title": "Only Video That Will Make You BETTER at MATH - 100%",
+      "url": "https://www.youtube.com/watch?v=dp4WLiQ7gxs",
+      "thumbnail": "https://i.ytimg.com/vi/dp4WLiQ7gxs/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB23sxyWah3rtJ8n3H2td8bhQnxZQ",
+      "channel": "Margin",
+      "views": "161K views",
+      "published": null
+    },
+    {
+      "position": 9,
+      "id": "5beOlS5Ts24",
+      "title": "Every Programming Language Explained in 12 Minutes",
+      "url": "https://www.youtube.com/watch?v=5beOlS5Ts24",
+      "thumbnail": "https://i.ytimg.com/vi/5beOlS5Ts24/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCvVxXv70sft7J9r7hZsDBmAGl3WA",
+      "channel": "Computer Science Explainer",
+      "views": "747K views",
+      "published": null
+    },
+    {
+      "position": 10,
+      "id": "dtVKaGpn8Gg",
+      "title": "Order a Pizza Without Saying 'Pizza' and Other Helpful Words | Full Task | Taskmaster",
+      "url": "https://www.youtube.com/watch?v=dtVKaGpn8Gg",
+      "thumbnail": "https://i.ytimg.com/vi/dtVKaGpn8Gg/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB7el-NHGmNe3-8-6vy7P3gTbBozQ",
+      "channel": "Taskmaster",
+      "views": "4.7M views",
+      "published": null
+    },
+    {
+      "position": 11,
+      "id": "QQ3o0N43Cgg",
+      "title": "Farage can't stop the Count",
+      "url": "https://www.youtube.com/watch?v=QQ3o0N43Cgg",
+      "thumbnail": "https://i.ytimg.com/vi/QQ3o0N43Cgg/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAn021tpefJLaNOYn1RllBsljLbOQ",
+      "channel": "Scroll Deep",
+      "views": "217K views",
+      "published": null
+    },
+    {
+      "position": 12,
+      "id": "yk4XMhqwz6E",
+      "title": "The Strangest Things that Correlate with IQ",
+      "url": "https://www.youtube.com/watch?v=yk4XMhqwz6E",
+      "thumbnail": "https://i.ytimg.com/vi/yk4XMhqwz6E/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAYXBM6LRn_ExBwsld4x4dOQEQTzg",
+      "channel": "Spencer Greenberg",
+      "views": "702K views",
+      "published": null
+    }
+  ],
+  "related_count": 12
+}

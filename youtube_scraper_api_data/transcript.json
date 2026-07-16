@@ -1,0 +1,379 @@
+{
+  "video_id": "x7X9w_GIm1s",
+  "url": "https://www.youtube.com/watch?v=x7X9w_GIm1s",
+  "transcript_available": true,
+  "language": "en",
+  "language_name": "English (auto-generated)",
+  "is_generated": true,
+  "source": "asr",
+  "segment_count": 72,
+  "time_unit": "seconds",
+  "word_count": 456,
+  "char_count": 2692,
+  "available_languages": [
+    "en"
+  ],
+  "segments": [
+    {
+      "text": "python a highlevel interpreted",
+      "start": 0.16,
+      "duration": 4.08
+    },
+    {
+      "text": "programming language famous for its",
+      "start": 2.36,
+      "duration": 4.08
+    },
+    {
+      "text": "zen-like code it's arguably the most",
+      "start": 4.24,
+      "duration": 3.88
+    },
+    {
+      "text": "popular language in the world because",
+      "start": 6.44,
+      "duration": 3.88
+    },
+    {
+      "text": "it's easy to learn yet practical for",
+      "start": 8.12,
+      "duration": 4.399
+    },
+    {
+      "text": "serious projects in fact you're watching",
+      "start": 10.32,
+      "duration": 4.239
+    },
+    {
+      "text": "this YouTube video in a python web",
+      "start": 12.519,
+      "duration": 3.801
+    },
+    {
+      "text": "application right now it was created by",
+      "start": 14.559,
+      "duration": 4.48
+    },
+    {
+      "text": "Guido van rossom and released in 1991",
+      "start": 16.32,
+      "duration": 4.879
+    },
+    {
+      "text": "who named it after Monty Python's Flying",
+      "start": 19.039,
+      "duration": 3.841
+    },
+    {
+      "text": "Circus which is why you'll sometimes",
+      "start": 21.199,
+      "duration": 4.041
+    },
+    {
+      "text": "find spaming eggs instead of Foo and bar",
+      "start": 22.88,
+      "duration": 4.399
+    },
+    {
+      "text": "and code samples it's commonly used to",
+      "start": 25.24,
+      "duration": 4.039
+    },
+    {
+      "text": "build serers side applications like web",
+      "start": 27.279,
+      "duration": 3.84
+    },
+    {
+      "text": "apps with the framework and is the",
+      "start": 29.279,
+      "duration": 4.201
+    },
+    {
+      "text": "language of choice for Big Data analysis",
+      "start": 31.119,
+      "duration": 4.001
+    },
+    {
+      "text": "and machine learning many students",
+      "start": 33.48,
+      "duration": 3.68
+    },
+    {
+      "text": "choose python to start learning decode",
+      "start": 35.12,
+      "duration": 4
+    },
+    {
+      "text": "because of its emphasis on readability",
+      "start": 37.16,
+      "duration": 4.079
+    },
+    {
+      "text": "as outlined by the Zen of python",
+      "start": 39.12,
+      "duration": 3.919
+    },
+    {
+      "text": "beautiful is better than ugly while",
+      "start": 41.239,
+      "duration": 4.041
+    },
+    {
+      "text": "explicit is better than implicit python",
+      "start": 43.039,
+      "duration": 4.2
+    },
+    {
+      "text": "is very simple but avoids the temptation",
+      "start": 45.28,
+      "duration": 3.88
+    },
+    {
+      "text": "to sprinkle in Magic that causes",
+      "start": 47.239,
+      "duration": 4.201
+    },
+    {
+      "text": "ambiguity its code is often organized",
+      "start": 49.16,
+      "duration": 4.199
+    },
+    {
+      "text": "into notebooks where individual cells",
+      "start": 51.44,
+      "duration": 4.16
+    },
+    {
+      "text": "can be executed then documented in the",
+      "start": 53.359,
+      "duration": 3.961
+    },
+    {
+      "text": "same place we're currently at version",
+      "start": 55.6,
+      "duration": 3.2
+    },
+    {
+      "text": "three of the language and you can get",
+      "start": 57.32,
+      "duration": 3.759
+    },
+    {
+      "text": "started by creating a file that ends in",
+      "start": 58.8,
+      "duration": 5.319
+    },
+    {
+      "text": "py or iynb to create an interactive",
+      "start": 61.079,
+      "duration": 5.241
+    },
+    {
+      "text": "notebook create a variable by setting a",
+      "start": 64.119,
+      "duration": 4.281
+    },
+    {
+      "text": "name equal to a value it's strongly",
+      "start": 66.32,
+      "duration": 3.76
+    },
+    {
+      "text": "typed which means values won't change in",
+      "start": 68.4,
+      "duration": 4
+    },
+    {
+      "text": "unexpected ways but Dynamic so type",
+      "start": 70.08,
+      "duration": 4.32
+    },
+    {
+      "text": "annotations are not required the syntax",
+      "start": 72.4,
+      "duration": 3.759
+    },
+    {
+      "text": "is highly efficient allowing you to",
+      "start": 74.4,
+      "duration": 3.44
+    },
+    {
+      "text": "declare multiple variables on a single",
+      "start": 76.159,
+      "duration": 3.841
+    },
+    {
+      "text": "line and Define tupal lists and",
+      "start": 77.84,
+      "duration": 4.16
+    },
+    {
+      "text": "dictionaries with a literal syntax",
+      "start": 80,
+      "duration": 3.799
+    },
+    {
+      "text": "semicolons are not required and if you",
+      "start": 82,
+      "duration": 4.04
+    },
+    {
+      "text": "use them and experience pythonista will",
+      "start": 83.799,
+      "duration": 4.081
+    },
+    {
+      "text": "say that your code is not pythonic",
+      "start": 86.04,
+      "duration": 3.96
+    },
+    {
+      "text": "instead of semicolons python uses",
+      "start": 87.88,
+      "duration": 4.279
+    },
+    {
+      "text": "indentation to terminate or determine",
+      "start": 90,
+      "duration": 4.04
+    },
+    {
+      "text": "the scope of a line of code Define a",
+      "start": 92.159,
+      "duration": 3.521
+    },
+    {
+      "text": "function with the def keyword then",
+      "start": 94.04,
+      "duration": 3.52
+    },
+    {
+      "text": "indent the next line usually by four",
+      "start": 95.68,
+      "duration": 4.04
+    },
+    {
+      "text": "spaces to define the function body we",
+      "start": 97.56,
+      "duration": 3.64
+    },
+    {
+      "text": "might then add a for Loop to it and",
+      "start": 99.72,
+      "duration": 3.8
+    },
+    {
+      "text": "indent that by another four spaces this",
+      "start": 101.2,
+      "duration": 4.279
+    },
+    {
+      "text": "eliminates the need for curly braces and",
+      "start": 103.52,
+      "duration": 4.239
+    },
+    {
+      "text": "semicolons found in many other languages",
+      "start": 105.479,
+      "duration": 4.28
+    },
+    {
+      "text": "python is a multiparadigm language we",
+      "start": 107.759,
+      "duration": 3.281
+    },
+    {
+      "text": "can apply functional programming",
+      "start": 109.759,
+      "duration": 2.881
+    },
+    {
+      "text": "patterns with things like Anonymous",
+      "start": 111.04,
+      "duration": 3.719
+    },
+    {
+      "text": "functions using Lambda it also uses",
+      "start": 112.64,
+      "duration": 4
+    },
+    {
+      "text": "objects as an abstraction for data",
+      "start": 114.759,
+      "duration": 3.841
+    },
+    {
+      "text": "allowing you to implement objectoriented",
+      "start": 116.64,
+      "duration": 3.799
+    },
+    {
+      "text": "patterns with things like classes and",
+      "start": 118.6,
+      "duration": 4.479
+    },
+    {
+      "text": "inheritance it also has a huge ecosystem",
+      "start": 120.439,
+      "duration": 4.68
+    },
+    {
+      "text": "of thirdparty libraries such as deep",
+      "start": 123.079,
+      "duration": 3.96
+    },
+    {
+      "text": "learning Frameworks like tensorflow and",
+      "start": 125.119,
+      "duration": 3.48
+    },
+    {
+      "text": "rappers for many high performance",
+      "start": 127.039,
+      "duration": 3.64
+    },
+    {
+      "text": "low-level packages like open computer",
+      "start": 128.599,
+      "duration": 3.921
+    },
+    {
+      "text": "vision which are most often installed",
+      "start": 130.679,
+      "duration": 3.84
+    },
+    {
+      "text": "with the PIP package manager this has",
+      "start": 132.52,
+      "duration": 4.04
+    },
+    {
+      "text": "been the Python programming language in",
+      "start": 134.519,
+      "duration": 3.521
+    },
+    {
+      "text": "100 seconds hit the like button if you",
+      "start": 136.56,
+      "duration": 3.2
+    },
+    {
+      "text": "want to see more short videos like this",
+      "start": 138.04,
+      "duration": 3.6
+    },
+    {
+      "text": "thanks for watching and I will see you",
+      "start": 139.76,
+      "duration": 5.4
+    },
+    {
+      "text": "in the next one",
+      "start": 141.64,
+      "duration": 3.52
+    }
+  ],
+  "text": "python a highlevel interpreted programming language famous for its zen-like code it's arguably the most popular language in the world because it's easy to learn yet practical for serious projects in fact you're watching this YouTube video in a python web application right now it was created by Guido van rossom and released in 1991 who named it after Monty Python's Flying Circus which is why you'll sometimes find spaming eggs instead of Foo and bar and code samples it's commonly used to build serers side applications like web apps with the framework and is the language of choice for Big Data analysis and machine learning many students choose python to start learning decode because of its emphasis on readability as outlined by the Zen of python beautiful is better than ugly while explicit is better than implicit python is very simple but avoids the temptation to sprinkle in Magic that causes ambiguity its code is often organized into notebooks where individual cells can be executed then documented in the same place we're currently at version three of the language and you can get started by creating a file that ends in py or iynb to create an interactive notebook create a variable by setting a name equal to a value it's strongly typed which means values won't change in unexpected ways but Dynamic so type annotations are not required the syntax is highly efficient allowing you to declare multiple variables on a single line and Define tupal lists and dictionaries with a literal syntax semicolons are not required and if you use them and experience pythonista will say that your code is not pythonic instead of semicolons python uses indentation to terminate or determine the scope of a line of code Define a function with the def keyword then indent the next line usually by four spaces to define the function body we might then add a for Loop to it and indent that by another four spaces this eliminates the need for curly braces and semicolons found in many other languages python is a multiparadigm language we can apply functional programming patterns with things like Anonymous functions using Lambda it also uses objects as an abstraction for data allowing you to implement objectoriented patterns with things like classes and inheritance it also has a huge ecosystem of thirdparty libraries such as deep learning Frameworks like tensorflow and rappers for many high performance low-level packages like open computer vision which are most often installed with the PIP package manager this has been the Python programming language in 100 seconds hit the like button if you want to see more short videos like this thanks for watching and I will see you in the next one"
+}

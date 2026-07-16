@@ -1,0 +1,180 @@
+{
+  "video_id": "x7X9w_GIm1s",
+  "url": "https://www.youtube.com/watch?v=x7X9w_GIm1s",
+  "type": "video",
+  "title": "Python in 100 Seconds",
+  "description": "Python is arguably the world's most popular programming language. It is easy to learn, yet suitable in professional software like web applications, data science, and server-side scripts. https://fireship.io/tags/python/\n\n#python #programming #100SecondsOfCode\n\n🔗 Resources\n\nPython Docs https://docs.python.org/3/\nPython TIOBE Ranking https://www.infoworld.com/article/3636789/python-tops-tiobe-language-index.html\n\n🔥 Get More Content - Upgrade to PRO\n\nUpgrade to Fireship PRO at https://fireship.io/pro\nUse code lORhwXd2 for 25% off your first payment. \n\n🎨 My Editor Settings\n\n- Atom One Dark \n- vscode-icons\n- Fira Code Font\n\n🔖 Topics Covered\n\n- Is YouTube built with Python?\n- Is Python Strongly typed?\n- Python syntax and indentation rules\n- When was python released?",
+  "view_count": 3060670,
+  "view_count_text": "3060670",
+  "like_count": 115982,
+  "comment_count": null,
+  "duration_seconds": 143,
+  "keywords": [
+    "webdev",
+    "app development",
+    "lesson",
+    "tutorial"
+  ],
+  "category": "Science & Technology",
+  "is_live": false,
+  "is_family_safe": true,
+  "is_private": false,
+  "allow_ratings": true,
+  "publish_date": "2021-10-25T08:19:28-07:00",
+  "upload_date": "2021-10-25T08:19:28-07:00",
+  "channel_id": "UCsBjURrPoezykLs9EqgamOA",
+  "channel_name": "Fireship",
+  "channel_handle": "http://www.youtube.com/@Fireship",
+  "channel_url": "https://www.youtube.com/channel/UCsBjURrPoezykLs9EqgamOA",
+  "thumbnail": "https://i.ytimg.com/vi/x7X9w_GIm1s/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCrVjDSaMXGhMyxCQgh8JEAbsBJcw",
+  "thumbnails": [
+    {
+      "url": "https://i.ytimg.com/vi/x7X9w_GIm1s/default.jpg",
+      "width": 120,
+      "height": 90
+    },
+    {
+      "url": "https://i.ytimg.com/vi/x7X9w_GIm1s/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+    },
+    {
+      "url": "https://i.ytimg.com/vi/x7X9w_GIm1s/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+    },
+    {
+      "url": "https://i.ytimg.com/vi/x7X9w_GIm1s/sddefault.jpg",
+      "width": 640,
+      "height": 480
+    },
+    {
+      "url": "https://i.ytimg.com/vi/x7X9w_GIm1s/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCrVjDSaMXGhMyxCQgh8JEAbsBJcw",
+      "width": 686,
+      "height": 386
+    }
+  ],
+  "related": [
+    {
+      "position": 1,
+      "id": "l9AzO1FMgM8",
+      "title": "Java in 100 Seconds",
+      "url": "https://www.youtube.com/watch?v=l9AzO1FMgM8",
+      "thumbnail": "https://i.ytimg.com/vi/l9AzO1FMgM8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAtFYjsSas389w4jX_BdgYl1vncmA",
+      "channel": "Fireship",
+      "views": "1.6M views",
+      "published": null
+    },
+    {
+      "position": 2,
+      "id": "Gx5qb1uHss4",
+      "title": "10 Important Python Concepts In 20 Minutes",
+      "url": "https://www.youtube.com/watch?v=Gx5qb1uHss4",
+      "thumbnail": "https://i.ytimg.com/vi/Gx5qb1uHss4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAn5kTPAvmTgCR5bdLmjoCt3zmYXA",
+      "channel": "Indently",
+      "views": "1.4M views",
+      "published": null
+    },
+    {
+      "position": 3,
+      "id": "pEfrdAtAmqk",
+      "title": "God-Tier Developer Roadmap",
+      "url": "https://www.youtube.com/watch?v=pEfrdAtAmqk",
+      "thumbnail": "https://i.ytimg.com/vi/pEfrdAtAmqk/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLA-NLRBxEErWbgYg0JjtB_bazxqgA",
+      "channel": "Fireship",
+      "views": "8.3M views",
+      "published": null
+    },
+    {
+      "position": 4,
+      "id": "MtxP2pyCvYA",
+      "title": "Every operating system concept in one video…",
+      "url": "https://www.youtube.com/watch?v=MtxP2pyCvYA",
+      "thumbnail": "https://i.ytimg.com/vi/MtxP2pyCvYA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBnk8F7ThqRyyLU6ZjA_zAorYZhhQ",
+      "channel": "Fireship",
+      "views": "650K views",
+      "published": null
+    },
+    {
+      "position": 5,
+      "id": "I72uD8ED73U",
+      "title": "5 Good Python Habits",
+      "url": "https://www.youtube.com/watch?v=I72uD8ED73U",
+      "thumbnail": "https://i.ytimg.com/vi/I72uD8ED73U/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAbYbxG3_nYFx0QLBKM11gVemTWCA",
+      "channel": "Indently",
+      "views": "1.1M views",
+      "published": null
+    },
+    {
+      "position": 6,
+      "id": "I1x84f-GnEc",
+      "title": "Every Programming Language Explained in 16 Minutes",
+      "url": "https://www.youtube.com/watch?v=I1x84f-GnEc",
+      "thumbnail": "https://i.ytimg.com/vi/I1x84f-GnEc/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCdntlquLI4AC50ppGfSQB9gleOzQ",
+      "channel": "explainerguy01 and Explainer Chris",
+      "views": "261K views",
+      "published": null
+    },
+    {
+      "position": 7,
+      "id": "ML3q7Ok4hJg",
+      "title": "I read every major CS paper of the last 100 years...",
+      "url": "https://www.youtube.com/watch?v=ML3q7Ok4hJg",
+      "thumbnail": "https://i.ytimg.com/vi/ML3q7Ok4hJg/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLD56MGdvl1fAXYdHxxdBjOsi2ylFQ",
+      "channel": "Fireship",
+      "views": "611K views",
+      "published": null
+    },
+    {
+      "position": 8,
+      "id": "FLcrvMfHUJM",
+      "title": "MIT Explains the 12 Possible Endings for AI",
+      "url": "https://www.youtube.com/watch?v=FLcrvMfHUJM",
+      "thumbnail": "https://i.ytimg.com/vi/FLcrvMfHUJM/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBVzRVUcHwFO02vygInK19p_QIZ3g",
+      "channel": "Species | Documenting AGI",
+      "views": "6.4M views",
+      "published": null
+    },
+    {
+      "position": 9,
+      "id": "npQ2IORdlvU",
+      "title": "How To Learn So Fast It’s Almost Unfair",
+      "url": "https://www.youtube.com/watch?v=npQ2IORdlvU",
+      "thumbnail": "https://i.ytimg.com/vi/npQ2IORdlvU/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB9306DlNwDslv33v9sZvLvHGYmiw",
+      "channel": "Sandeep Swadia",
+      "views": "5M views",
+      "published": null
+    },
+    {
+      "position": 10,
+      "id": "GK2pZ_oVU1o",
+      "title": "The Scariest Chart In Electrical Engineering",
+      "url": "https://www.youtube.com/watch?v=GK2pZ_oVU1o",
+      "thumbnail": "https://i.ytimg.com/vi/GK2pZ_oVU1o/hq720_custom_2.jpg?sqp=CLzp5NIG-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDp8Gt_hBbQoW-WKfaj3WycxAm_IA",
+      "channel": "Veritasium",
+      "views": "2.6M views",
+      "published": null
+    },
+    {
+      "position": 11,
+      "id": "ZANFhJ9HYsM",
+      "title": "RollerCoaster Tycoon Optimizations are Insane",
+      "url": "https://www.youtube.com/watch?v=ZANFhJ9HYsM",
+      "thumbnail": "https://i.ytimg.com/vi/ZANFhJ9HYsM/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCCiZbFU4bu1IGDpdyM_hP2aAOIPA",
+      "channel": "The PrimeTime",
+      "views": "616K views",
+      "published": null
+    },
+    {
+      "position": 12,
+      "id": "8KCuHHeC_M0",
+      "title": "Learn Python in 1 hour! 🐍",
+      "url": "https://www.youtube.com/watch?v=8KCuHHeC_M0",
+      "thumbnail": "https://i.ytimg.com/vi/8KCuHHeC_M0/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLA_o6x62xAxJ7mWEyWhoG_L3RXtuw",
+      "channel": "Bro Code",
+      "views": "644K views",
+      "published": null
+    }
+  ],
+  "related_count": 12
+}

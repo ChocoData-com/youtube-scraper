@@ -1,0 +1,150 @@
+{
+  "playlist_id": "PLWKjhJtqVAbkmRvnFmOd4KhDdlK1oIq23",
+  "title": "Python Basics with Sam",
+  "channel": "freeCodeCamp.org",
+  "video_count": 14,
+  "views": 518685,
+  "videos": [
+    {
+      "position": 1,
+      "id": "z2k9Jh3jDVU",
+      "title": "Intro to Python Livestream - Python Basics with Sam",
+      "url": "https://www.youtube.com/watch?v=z2k9Jh3jDVU",
+      "thumbnail": "https://i.ytimg.com/vi/z2k9Jh3jDVU/hq720.jpg?sqp=-oaymwEcCK4FEIIDSEbyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB0NJYTnwJAAACWrUhRC6VHohSSMA",
+      "channel": "freeCodeCamp.org",
+      "views": "471K views",
+      "published": "Streamed 6 years ago"
+    },
+    {
+      "position": 2,
+      "id": "4UuMrebbwIo",
+      "title": "Python For Loops, Functions, and Random - Python Basics with Sam",
+      "url": "https://www.youtube.com/watch?v=4UuMrebbwIo",
+      "thumbnail": "https://i.ytimg.com/vi/4UuMrebbwIo/hq720.jpg?sqp=-oaymwEcCK4FEIIDSEbyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCbBQHHzFzwwMFjr56q2t565etj2w",
+      "channel": "freeCodeCamp.org",
+      "views": "96K views",
+      "published": "Streamed 6 years ago"
+    },
+    {
+      "position": 3,
+      "id": "DhdOKh5Issw",
+      "title": "Prime Numbers, Times Tables, & More - Python Basics with Sam",
+      "url": "https://www.youtube.com/watch?v=DhdOKh5Issw",
+      "thumbnail": "https://i.ytimg.com/vi/DhdOKh5Issw/hq720.jpg?sqp=-oaymwEcCK4FEIIDSEbyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD2jB1ShM6z7C2v4W86v4ipvJHv1Q",
+      "channel": "freeCodeCamp.org",
+      "views": "46K views",
+      "published": "Streamed 5 years ago"
+    },
+    {
+      "position": 4,
+      "id": "hoP7_DkrmiA",
+      "title": "Find Longest Substring / Guessing Game - Python Basics with Sam",
+      "url": "https://www.youtube.com/watch?v=hoP7_DkrmiA",
+      "thumbnail": "https://i.ytimg.com/vi/hoP7_DkrmiA/hq720.jpg?sqp=-oaymwEcCK4FEIIDSEbyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAjqu6LWljPej1ehyR00lgKpmt9ig",
+      "channel": "freeCodeCamp.org",
+      "views": "39K views",
+      "published": "Streamed 5 years ago"
+    },
+    {
+      "position": 5,
+      "id": "2T8BFVPhYPs",
+      "title": "Command Line and Recursion in Python - Python Basics with Sam",
+      "url": "https://www.youtube.com/watch?v=2T8BFVPhYPs",
+      "thumbnail": "https://i.ytimg.com/vi/2T8BFVPhYPs/hq720.jpg?sqp=-oaymwEcCK4FEIIDSEbyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCzGllg-xrVYe4qk1cZyDcVq1iMaQ",
+      "channel": "freeCodeCamp.org",
+      "views": "30K views",
+      "published": "Streamed 5 years ago"
+    },
+    {
+      "position": 6,
+      "id": "VckRJ6v1yWU",
+      "title": "Scope and Decorators - Python Basics with Sam",
+      "url": "https://www.youtube.com/watch?v=VckRJ6v1yWU",
+      "thumbnail": "https://i.ytimg.com/vi/VckRJ6v1yWU/hq720.jpg?sqp=-oaymwEcCK4FEIIDSEbyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB3wAQuv-eOjlBqPx91Yi91_z5g_Q",
+      "channel": "freeCodeCamp.org",
+      "views": "25K views",
+      "published": "Streamed 5 years ago"
+    },
+    {
+      "position": 7,
+      "id": "xapvhkhlPNI",
+      "title": "Build a Shopping List for the Command Line - Python Basics with Sam",
+      "url": "https://www.youtube.com/watch?v=xapvhkhlPNI",
+      "thumbnail": "https://i.ytimg.com/vi/xapvhkhlPNI/hq720.jpg?sqp=-oaymwEcCK4FEIIDSEbyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDtMGGZPlG7CAXnavWLL8lH67Gs6Q",
+      "channel": "freeCodeCamp.org",
+      "views": "29K views",
+      "published": "Streamed 5 years ago"
+    },
+    {
+      "position": 8,
+      "id": "UzDuMsnTIGQ",
+      "title": "Generators and Classes - Python Basics with Sam",
+      "url": "https://www.youtube.com/watch?v=UzDuMsnTIGQ",
+      "thumbnail": "https://i.ytimg.com/vi/UzDuMsnTIGQ/hq720.jpg?sqp=-oaymwEcCK4FEIIDSEbyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCWooBh86qjTl5uY45I3UZffOTAFA",
+      "channel": "freeCodeCamp.org",
+      "views": "25K views",
+      "published": "Streamed 5 years ago"
+    },
+    {
+      "position": 9,
+      "id": "1vMtftJf7tQ",
+      "title": "Board Game, Lists and More - Python Basics with Sam",
+      "url": "https://www.youtube.com/watch?v=1vMtftJf7tQ",
+      "thumbnail": "https://i.ytimg.com/vi/1vMtftJf7tQ/hq720.jpg?sqp=-oaymwEcCK4FEIIDSEbyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAVoPCwPNkV17SIfwBDkY0x_yy_hw",
+      "channel": "freeCodeCamp.org",
+      "views": "32K views",
+      "published": "Streamed 5 years ago"
+    },
+    {
+      "position": 10,
+      "id": "kZNIHeCaZiM",
+      "title": "Chicken Nuggets and itertools - Python Basics with Sam",
+      "url": "https://www.youtube.com/watch?v=kZNIHeCaZiM",
+      "thumbnail": "https://i.ytimg.com/vi/kZNIHeCaZiM/hq720.jpg?sqp=-oaymwEcCK4FEIIDSEbyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAubo9LrJXCIi0ol_knFMOvtu-MQw",
+      "channel": "freeCodeCamp.org",
+      "views": "20K views",
+      "published": "Streamed 5 years ago"
+    },
+    {
+      "position": 11,
+      "id": "PkLwJicRI8s",
+      "title": "Tkinter Calculator - Python Basics with Sam",
+      "url": "https://www.youtube.com/watch?v=PkLwJicRI8s",
+      "thumbnail": "https://i.ytimg.com/vi/PkLwJicRI8s/hq720.jpg?sqp=-oaymwEcCK4FEIIDSEbyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLChCbX_QwVil5uG1-bpsXDv5RwQFA",
+      "channel": "freeCodeCamp.org",
+      "views": "32K views",
+      "published": "Streamed 5 years ago"
+    },
+    {
+      "position": 12,
+      "id": "3j6v4wBZWR8",
+      "title": "Random Password Generator - Python Basics with Sam",
+      "url": "https://www.youtube.com/watch?v=3j6v4wBZWR8",
+      "thumbnail": "https://i.ytimg.com/vi/3j6v4wBZWR8/hq720.jpg?sqp=-oaymwEcCK4FEIIDSEbyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB_ny2rBJBqscXnFfp9aBZg0CbDxA",
+      "channel": "freeCodeCamp.org",
+      "views": "41K views",
+      "published": "Streamed 5 years ago"
+    },
+    {
+      "position": 13,
+      "id": "iVajTZgMk4M",
+      "title": "Solving Python Challenges - Python Basics with Sam",
+      "url": "https://www.youtube.com/watch?v=iVajTZgMk4M",
+      "thumbnail": "https://i.ytimg.com/vi/iVajTZgMk4M/hq720.jpg?sqp=-oaymwEcCK4FEIIDSEbyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCT2htJBekM63tlBjDizx89aYOfwA",
+      "channel": "freeCodeCamp.org",
+      "views": "43K views",
+      "published": "Streamed 5 years ago"
+    },
+    {
+      "position": 14,
+      "id": "mvXDQNNcDu4",
+      "title": "Python Main Function, Door Game, and More - Python Basics with Sam",
+      "url": "https://www.youtube.com/watch?v=mvXDQNNcDu4",
+      "thumbnail": "https://i.ytimg.com/vi/mvXDQNNcDu4/hq720.jpg?sqp=-oaymwEcCK4FEIIDSEbyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDDpSJHQRvM7qtWwY8dMYJLFlVN0g",
+      "channel": "freeCodeCamp.org",
+      "views": "31K views",
+      "published": "Streamed 5 years ago"
+    }
+  ],
+  "videos_returned": 14
+}
