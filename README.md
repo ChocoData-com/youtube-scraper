@@ -804,7 +804,19 @@ That is the honest split. The official API is excellent at "look up a video I ca
 | Custom | from $100/mo | from 200,000/mo | $0.50 flat |
 | Pay-as-you-go top-up | $0.90 / 1,000 | never expires | $0.90 |
 
-The comparison that matters: at Pro, a parsed YouTube response costs about **$0.0006**. A DIY residential fetch of the same search page costs roughly **$0.010 in bandwidth before a single minute of engineering time**, because the page is ~2 MB and you throw 99% of it away. The managed call is more than an order of magnitude cheaper than the raw bytes of doing it yourself.
+The comparison that matters: at Pro, a parsed YouTube response costs about **$0.0006**. Now the number that argues against us. The search page is ~2.1 MB decoded, which looks damning until you measure what a proxy actually bills, which is the **compressed** transfer:
+
+```bash
+curl -s -o /dev/null --compressed -w '%{size_download}\n' \
+  "https://www.youtube.com/results?search_query=python"
+# 165828
+```
+
+**165,828 bytes on the wire** (measured 2026-07-16, 13.3x smaller than the decoded page). At $3 to $8/GB retail residential that is **$0.00046 to $0.00124** per fetch, against our $0.0006.
+
+Those are the same number. **Bandwidth alone does not make the case**, and if your proxy is at the cheap end of that range, the raw bytes are cheaper than we are. Anyone who tells you a managed call beats DIY on bytes is quoting a decoded string length and hoping you do not check.
+
+What actually decides it is everything next to the bytes: the 3 to 5 days to build it, the 1 to 2 days every time the `ytInitialData` shapes move, the alerting you have to write to tell "blocked" from "no results", and the weeks of silently empty data you eat when you get that wrong.
 
 So, plainly:
 
