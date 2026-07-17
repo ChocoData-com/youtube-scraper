@@ -142,8 +142,8 @@ def hero():
 
 
 def evidence():
-    """The honest side-by-side. On YouTube the free script WORKS, so this is not
-    'blocked vs parsed'. It is what each path actually costs you."""
+    """Side by side. On YouTube the free script works, so this compares what each
+    path returns rather than blocked vs parsed."""
     W, H = 1280, 440
     img = vgrad(W, H, (15, 17, 21), (22, 16, 15))
     d = ImageDraw.Draw(img)
