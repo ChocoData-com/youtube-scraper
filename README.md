@@ -4,7 +4,7 @@
 
 **YouTube Scraper for extracting video titles, views, likes, channels, subscribers, descriptions and search results from YouTube.com.** This repo has a free YouTube web scraping script you can run right now, and a YouTube data API with 9 endpoints returning real structured JSON, including transcripts and comments.
 
-**Last updated: 2026-07-16.** Working against YouTube.com as of July 2026, and re-verified whenever YouTube changes their markup.
+**Last updated: 2026-07-17.** Working against YouTube.com as of July 2026, and re-verified whenever YouTube changes their markup.
 
 Every JSON block on this page was captured from the live API on 2026-07-16. Long arrays are trimmed to the first item or two and each block says exactly what was cut; the fields shown are verbatim. Full uncut samples are committed in [`youtube_scraper_api_data/`](youtube_scraper_api_data). Every code example calls the actual API and is runnable from [`youtube_scraper_api_codes/`](youtube_scraper_api_codes).
 
@@ -46,7 +46,7 @@ That is the whole point of this repo. The rest of this page is the reference: ev
 - [YouTube Scraper API reference](#youtube-scraper-api-reference)
   - [Quickstart](#quickstart) · [Authentication](#authentication) · [Global parameters](#global-parameters) · [Errors](#errors) · [Rate limits and concurrency](#rate-limits-and-concurrency)
   - [1. Search](#1-search-video-listings-channels-views-and-durations) · [2. Video](#2-video-titles-views-likes-descriptions-and-keywords) · [3. Transcript](#3-transcript-video-captions-and-subtitles-as-text) · [4. Comments](#4-comments-comment-text-authors-likes-and-replies) · [5. Channel](#5-channel-subscribers-video-listings-and-channel-metadata) · [6. Playlist](#6-playlist-playlist-videos-and-metadata) · [7. Shorts](#7-shorts-youtube-shorts-views-likes-and-duration) · [8. Suggest](#8-suggest-youtube-keyword-research-data)
-- [Channel performance tracking: a real use case](#channel-performance-tracking-a-real-use-case)
+- [Track a YouTube channel's views and subscribers over time](#track-a-youtube-channels-views-and-subscribers-over-time)
 - [Measured latency](#measured-latency)
 
 ---
@@ -115,7 +115,7 @@ Both work. The difference is not access, it is what you carry: ~2 MB of HTML and
 
 ### Using the Chocodata YouTube Scraper API
 
-The managed option, and the one this repo is built around. Nine endpoints for YouTube data extraction at scale, eight of them documented below (search, video, transcript, comments, channel, playlist, Shorts and suggest), a ~99% success rate, one JSON shape whichever renderer YouTube serves, and no proxy management. Free for the first 1,000 requests.
+The managed option, and the one this repo is built around: the [Chocodata YouTube Scraper API](https://chocodata.com/scraper-api/youtube?utm_source=github&utm_medium=repo&utm_campaign=youtube-scraper). Nine endpoints for YouTube data extraction at scale, eight of them documented below (search, video, transcript, comments, channel, playlist, Shorts and suggest), a ~99% success rate, one JSON shape whichever renderer YouTube serves, and no proxy management. Free for the first 1,000 requests.
 
 ---
 
@@ -148,7 +148,7 @@ After running the command, your terminal should look something like this:
 
 Note the top result in that screenshot is a K-pop music video, because `python` is genuinely ambiguous on YouTube and that is what the endpoint returned.
 
-Get a key at [chocodata.com](https://chocodata.com) (1,000 requests, one-time, no card).
+Get a key at chocodata.com (1,000 requests, one-time, no card).
 
 ### Authentication
 
@@ -172,7 +172,7 @@ Nothing below is billed: **you are only charged on a 2xx**.
 | Status | `error` code | Meaning | Billed | What to do |
 |---|---|---|---|---|
 | `400` | `invalid_params` | A required param is missing or the wrong type. Body lists the exact issue and `path`. | no | Fix the query string. |
-| `401` | `INVALID_API_KEY` | Key missing, unrecognised, or revoked. | no | Check `api_key`. Get one at [chocodata.com](https://chocodata.com). |
+| `401` | `INVALID_API_KEY` | Key missing, unrecognised, or revoked. | no | Check `api_key`. Get one at chocodata.com. |
 | `402` | `INSUFFICIENT_CREDITS` | Balance exhausted. | no | Top up ($0.90 / 1,000 requests, never expires) or upgrade. |
 | `429` | `RATE_LIMITED` | Over your plan's concurrency. | no | Back off and retry; see [Rate limits](#rate-limits-and-concurrency). |
 | `502` | `target_unreachable` | YouTube refused every attempt for this request. `retryable: true`. | no | Retry. |
@@ -718,7 +718,7 @@ There is also a `/youtube/email` endpoint that returns the contact links a creat
 
 ---
 
-## Channel performance tracking: a real use case
+## Track a YouTube channel's views and subscribers over time
 
 Tracking how videos and channels perform over time is the main reason people scrape YouTube, so that use case is in the repo end to end rather than as a snippet.
 
