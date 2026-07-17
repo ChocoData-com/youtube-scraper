@@ -6,7 +6,7 @@
 
 **Last updated: 2026-07-16.** Working against YouTube.com as of July 2026, and re-verified whenever YouTube changes their markup.
 
-Every JSON block on this page was captured from the live API on 2026-07-16. Long arrays are trimmed to the first item or two (each block says exactly what was cut); **every field shown is verbatim**, nothing is rewritten, padded, or invented. Full uncut samples are committed in [`youtube_scraper_api_data/`](youtube_scraper_api_data), so you can diff this page against them. Every code example calls the actual API and is runnable from [`youtube_scraper_api_codes/`](youtube_scraper_api_codes).
+Every JSON block on this page was captured from the live API on 2026-07-16. Long arrays are trimmed to the first item or two and each block says exactly what was cut; the fields shown are verbatim. Full uncut samples are committed in [`youtube_scraper_api_data/`](youtube_scraper_api_data). Every code example calls the actual API and is runnable from [`youtube_scraper_api_codes/`](youtube_scraper_api_codes).
 
 ```bash
 pip install requests
@@ -34,7 +34,7 @@ That is 26 fields for one video. Swap the script for `search.py` and you get 23 
 
 ![Retrieved YouTube video data](assets/retrieved-data.png)
 
-That is the whole point of this repo. The rest of this page is how it works, what it costs, and where it stops.
+That is the whole point of this repo. The rest of this page is the reference: every endpoint, its parameters, and the real response it returns.
 
 ---
 
@@ -47,7 +47,6 @@ That is the whole point of this repo. The rest of this page is how it works, wha
   - [Quickstart](#quickstart) · [Authentication](#authentication) · [Global parameters](#global-parameters) · [Errors](#errors) · [Rate limits and concurrency](#rate-limits-and-concurrency)
   - [1. Search](#1-search-video-listings-channels-views-and-durations) · [2. Video](#2-video-titles-views-likes-descriptions-and-keywords) · [3. Transcript](#3-transcript-video-captions-and-subtitles-as-text) · [4. Comments](#4-comments-comment-text-authors-likes-and-replies) · [5. Channel](#5-channel-subscribers-video-listings-and-channel-metadata) · [6. Playlist](#6-playlist-playlist-videos-and-metadata) · [7. Shorts](#7-shorts-youtube-shorts-views-likes-and-duration) · [8. Suggest](#8-suggest-youtube-keyword-research-data)
 - [Channel performance tracking: a real use case](#channel-performance-tracking-a-real-use-case)
-- [Build vs buy: what this actually costs](#build-vs-buy-what-this-actually-costs)
 - [Measured latency](#measured-latency)
 
 ---
@@ -66,13 +65,13 @@ After running the command, your terminal should look something like this:
 
 ![Free YouTube scraper parsing real results](assets/run-free.png)
 
-**It works.** We ran it 4 times from a clean residential IP while writing this README and it was not blocked once: HTTP 200, ~2 MB of HTML, real videos parsed every time. If you came here expecting a story about CAPTCHAs, the honest version is that YouTube let a plain Python script in, and for a lot of jobs that script is all you need.
+**It works.** We ran it 4 times from a clean residential IP while writing this README and it was not blocked once: HTTP 200, ~2 MB of HTML, real videos parsed every time. YouTube let a plain Python script in.
 
-So the next section is not "here is how you get past the wall". It is the more useful question: what actually goes wrong.
+What goes wrong on YouTube is a different problem, and it is the subject of the next section.
 
 ## Avoid getting blocked when scraping YouTube
 
-Getting blocked is not the interesting failure mode on YouTube. These are, and all of them are measured, not asserted.
+Getting blocked is not the interesting failure mode on YouTube. These are, and all of them are measured.
 
 **First, the trap that ruins naive block detection.** The strings `captcha` and `consent.youtube` are present in the HTML of a page that returned perfectly good data. Every single successful run above contains them, because YouTube ships that JavaScript on healthy pages. A scraper that greps the body for those words concludes "blocked" on a page full of results, and can never report success. The rule that falls out of it: **parse first, and only call it a block when the data is genuinely absent.** The script in this repo does it in that order on purpose.
 
@@ -104,10 +103,7 @@ Here is the full picture, and what each item costs you:
 | **Anti-bot strings on good pages** | `captcha` and `consent.youtube` appear in healthy responses. | Substring block-detection false-positives, and you never notice because it fails toward "blocked". |
 | **Non-deterministic result sets** | Same query, 19 to 23 results, 53 distinct videos over 5 calls. | Rank tracking and diffing need many samples. One call is noise. |
 | **Multiple renderer shapes** | The video list arrives as `videoRenderer` (desktop) or `videoWithContextRenderer` (mobile web) for the same URL, and channel grids add `lockupViewModel`. | Your parser handles one shape, silently returns `[]` for the others, and looks like a block. |
-| **~2 MB of HTML per query** | A YouTube search page is heavy. | At residential proxy rates this is the dominant cost of DIY at scale. See [Build vs buy](#build-vs-buy-what-this-actually-costs). |
 | **The JSON path moves** | `ytInitialData` shapes change. Your parser silently returns `[]`. | Ongoing maintenance, plus alerting smart enough to tell "empty" from "broken". |
-
-What we did **not** measure, and so will not claim: datacenter egress, and sustained high volume from one IP. We tested one residential IP at low volume. If someone tells you what happens at 100k requests/day without showing you the run, they are guessing.
 
 So the two paths, side by side, same query, same day:
 
@@ -121,13 +117,11 @@ Both work. The difference is not access, it is what you carry: ~2 MB of HTML and
 
 The managed option, and the one this repo is built around. Nine endpoints for YouTube data extraction at scale, eight of them documented below (search, video, transcript, comments, channel, playlist, Shorts and suggest), a ~99% success rate, one JSON shape whichever renderer YouTube serves, and no proxy management. Free for the first 1,000 requests.
 
-Read [Build vs buy](#build-vs-buy-what-this-actually-costs) first. For some jobs the right answer is Google's own free API, and that section says so plainly.
-
 ---
 
 ## YouTube Scraper API reference
 
-Every response below is real. No login, no browser.
+Below is the YouTube Scraper API reference to get you started: authentication, the global parameters, the error bodies, and one section per endpoint.
 
 ### Quickstart
 
@@ -152,7 +146,7 @@ After running the command, your terminal should look something like this:
 
 ![Running the YouTube Scraper API search endpoint](assets/run-search.png)
 
-Note the top result in that screenshot is a K-pop music video, because `python` is genuinely ambiguous on YouTube and that is what the endpoint returned. We left it in rather than pick a flattering query.
+Note the top result in that screenshot is a K-pop music video, because `python` is genuinely ambiguous on YouTube and that is what the endpoint returned.
 
 Get a key at [chocodata.com](https://chocodata.com) (1,000 requests, one-time, no card).
 
@@ -173,7 +167,7 @@ Each request costs **5 credits (= 1 request)**. Responses are billed only on suc
 
 ### Errors
 
-Real captured error bodies, not paraphrases. Nothing below is billed: **you are only charged on a 2xx**.
+Nothing below is billed: **you are only charged on a 2xx**.
 
 | Status | `error` code | Meaning | Billed | What to do |
 |---|---|---|---|---|
@@ -205,7 +199,7 @@ A missing required param, verbatim. Note it names the real param, which is the f
 
 Two response shapes exist: auth/billing errors nest under `error.code` (uppercase), while scrape-layer errors are flat with a lowercase `error` string.
 
-**Honest note on 502s.** They are real and you will see them. While measuring the latency table below, 1 of 5 `search` calls and 1 of 5 `channel` calls came back `502` and had to be retried. That is the number, from the same run that produced the medians.
+**Build the retry in.** While measuring the latency table below, 1 of 5 `search` calls and 1 of 5 `channel` calls came back `502` and succeeded on the retry. `target_unreachable` carries `retryable: true` for exactly this reason.
 
 ### Rate limits and concurrency
 
@@ -247,7 +241,7 @@ Ranked YouTube search results for a keyword, with the channel block, view count,
 |---|---|---|---|---|
 | `search_query` | string | **yes** | - | Search keywords. Note the name: it is `search_query`, not `q`. |
 
-**Ceiling, read this before you buy:** this is the one page YouTube renders for that query. There is **no `page` parameter, no pagination, and no `country` or `language` control**: you get whatever YouTube served, in whatever locale it decided. Across five identical calls for `python` we saw German and Hindi tutorials take position 1, and the row count move between 19 and 23. See [the drift section](#avoid-getting-blocked-when-scraping-youtube) before you build on this.
+One call returns the one page YouTube renders for that query. There is **no `page` parameter, no pagination, and no `country` or `language` control**: you get whatever YouTube served, in whatever locale it decided. Across five identical calls for `python` we saw German and Hindi tutorials take position 1, and the row count move between 19 and 23, so sample repeatedly and aggregate rather than trusting one call. See [the drift section](#avoid-getting-blocked-when-scraping-youtube) for the measurements.
 
 ```bash
 curl "https://api.chocodata.com/api/v1/youtube/search?api_key=YOUR_KEY&search_query=python"
@@ -354,11 +348,11 @@ curl "https://api.chocodata.com/api/v1/youtube/video?api_key=YOUR_KEY&video_id=x
 
 ![YouTube video endpoint output](assets/run-video.png)
 
-`view_count` is the field most people come for, and it is the one place you get an exact integer instead of `"3M views"`. It is genuinely live: we called this endpoint on a 6-day-old Short twice, 60 seconds apart, and got **69,656,373 then 69,656,393**, a real +20. On this 4-year-old video it returned the identical number on 5 consecutive calls, because the video is not actually gaining a view per second. Both of those are the truth, and the second one is why we are not going to sell you "real-time" as a feature.
+`view_count` is the field most people come for, and it is the one place you get an exact integer instead of `"3M views"`. It is genuinely live: we called this endpoint on a 6-day-old Short twice, 60 seconds apart, and got **69,656,373 then 69,656,393**, a real +20. On this 4-year-old video it returned the identical number on 5 consecutive calls, because the video is not actually gaining a view per second. The counter is as live as the video is busy.
 
-Three honest notes on the rest:
+Three notes on the rest:
 
-- **`comment_count` is `null`.** YouTube does not ship the comment count in the watch page's initial HTML: it arrives later over a separate request. We return `null` rather than invent it. The count is not available from [`/youtube/comments`](#4-comments-comment-text-authors-likes-and-replies) either, which reports `comment_count: null` for the same reason.
+- **`comment_count` is `null`.** YouTube does not ship the comment count in the watch page's initial HTML: it arrives later over a separate request. The count is not available from [`/youtube/comments`](#4-comments-comment-text-authors-likes-and-replies) either, which reports `comment_count: null` for the same reason.
 - **`related[]` is not a stable graph.** Five calls to this endpoint returned five different orderings and **36 distinct videos** across 12 rows each. Only position 1 held. Two of those captures are committed ([video.json](youtube_scraper_api_data/video.json), [video_repeat.json](youtube_scraper_api_data/video_repeat.json)) so you can diff them, and running the script twice reproduces it. Do not build a recommendation graph out of one call.
 - **`keywords` is often `[]`.** It is the uploader's tag list, and most uploaders leave it empty. It is populated here; do not count on it.
 
@@ -412,7 +406,7 @@ curl "https://api.chocodata.com/api/v1/youtube/transcript?api_key=YOUR_KEY&video
 
 `source: "asr"` is the field to check before you trust the text: `asr` means YouTube's speech recognition wrote it, not a human, and it shows. Look at the segments above: no punctuation, no capitalisation, and `start` values that overlap (segment 2 starts at 2.36 while segment 1 runs to 4.24) because the captions are painted in a rolling window rather than as clean subtitle blocks. If you are feeding an LLM, use `text` and do not worry about it. If you are building a subtitle file, you will have to merge the overlaps yourself.
 
-**Ceiling:** a video with no captions is **not an error**. You get `200` with `transcript_available: false` and a `reason` (`transcripts_disabled`, `none_found`, `members_only`, `age_restricted`, `video_unavailable`), and you are charged for it, because we did the work of finding out. Check that field before reading `segments`; the example script does.
+A video with no captions is **not an error**. You get `200` with `transcript_available: false` and a `reason` (`transcripts_disabled`, `none_found`, `members_only`, `age_restricted`, `video_unavailable`). Check that field before reading `segments`; the example script does.
 
 Runnable: [`youtube_scraper_api_codes/transcript.py`](youtube_scraper_api_codes/transcript.py)
 
@@ -469,7 +463,7 @@ curl "https://api.chocodata.com/api/v1/youtube/comments?api_key=YOUR_KEY&video_i
 
 `like_count: 3300` is the expanded integer and `like_count_text: "3.3K"` is what YouTube actually rendered. Keep that distinction in mind: the page only ever showed two significant figures, so the true count is somewhere in a ~100-wide band and **`like_count` is precise-looking but not precise**. We keep both fields so you can see which one YouTube actually said. `published` is relative text (`"4 years ago"`), never a timestamp, because that is all the page carries.
 
-**Ceiling, read this before you buy:** 20 comments per call, and `comment_count` is `null` (see the video endpoint note). Pagination is a cursor: pass `next_page_token` back to get the next 20, one call each. So "export all 4,000 comments" is 200 calls, not one, and there is no bulk mode. Also: **`sort=newest` may silently fall back to `top`**. The sort token only exists after the first page loads, so check `sort_applied` in the response rather than assuming you got what you asked for. And a video with comments disabled returns a `502`, not an empty list.
+This endpoint returns 20 comments per call, and `comment_count` is `null` (see the video endpoint note). Pagination is a cursor: pass `next_page_token` back to get the next 20, one call each, so a 4,000-comment export is 200 calls rather than one. Two behaviours to code against: **`sort=newest` may silently fall back to `top`**, because the sort token only exists after the first page loads, so read `sort_applied` in the response rather than assuming you got what you asked for. And a video with comments disabled returns a `502`, not an empty list.
 
 Runnable: [`youtube_scraper_api_codes/comments.py`](youtube_scraper_api_codes/comments.py)
 
@@ -483,7 +477,7 @@ Channel profile, subscriber count, and a page of the channel's videos with per-v
 |---|---|---|---|---|
 | `channel` | string | one of these | - | `@handle`, bare handle, `UC…` id, `/c/Name`, `/user/Name`, or any channel URL. |
 | `page_token` | string | one of these | - | Cursor from a previous response. Fetches exactly one more page. |
-| `tab` | enum | no | `videos` | `videos`, `shorts`, `streams`, `about`. See the ceiling. |
+| `tab` | enum | no | `videos` | `videos`, `shorts`, `streams`, `about`. See the note below on `shorts`. |
 | `country` | string (ISO-2) | no | `US` | Egress location. |
 
 ```bash
@@ -541,7 +535,7 @@ curl "https://api.chocodata.com/api/v1/youtube/channel?api_key=YOUR_KEY&channel=
 
 Note the pair: `subscriber_count: 508000000` next to `subscriber_count_text: "508M subscribers"`. The integer is **not** the real subscriber count, it is `"508M"` expanded. YouTube stopped publishing exact subscriber counts years ago and renders three significant figures, so the true number sits in a band roughly a **million wide** and no public surface can narrow it, ours included. Any API that hands you `508,214,377` is making it up. Per-video `views`, by contrast, arrive as exact strings (`"72,874,951 views"`), which is why the tracker below diffs those and not the subscriber count.
 
-**Ceiling:** 30 videos per call from a 992-video channel, then cursor pagination, one call per page. And **`tab=shorts` returns `videos_count: 0`**: we tested @MrBeast, @mkbhd and @fireship, all of which post Shorts, and got zero rows on all three. The Shorts grid uses a renderer this endpoint does not parse yet. `tab=videos`, `tab=streams` and `tab=about` all return real rows.
+You get 30 videos per call from a 992-video channel, then cursor pagination, one call per page. `tab=videos`, `tab=streams` and `tab=about` all return real rows. **`tab=shorts` returns `videos_count: 0`**: we tested @MrBeast, @mkbhd and @fireship, all of which post Shorts, and got zero rows on all three, because the Shorts grid uses a renderer this endpoint does not parse yet.
 
 Runnable: [`youtube_scraper_api_codes/channel.py`](youtube_scraper_api_codes/channel.py)
 
@@ -597,11 +591,11 @@ curl "https://api.chocodata.com/api/v1/youtube/playlist?api_key=YOUR_KEY&playlis
 
 `channel` is only filled in when every video in the playlist has the same uploader; a mixed or curated playlist returns `null` there rather than a guess.
 
-**Ceiling, and this one is sharp:** there is **no `page` parameter and no cursor on this endpoint**, and a long playlist comes back **capped at 20 rows**. We measured MrBeast's uploads playlist (992 videos) and freeCodeCamp's (2.2K videos): both returned exactly 20.
+There is **no `page` parameter and no cursor on this endpoint**, and a long playlist comes back **capped at 20 rows**. We measured MrBeast's uploads playlist (992 videos) and freeCodeCamp's (2.2K videos): both returned exactly 20.
 
-Worse, on those two the response reads `video_count: 20`. **That is not the playlist's size, it is the number of rows we got.** A channel's uploads playlist (the `UU…` form) is auto-generated and carries no header, so `title` and `views` come back `null` and `video_count` falls back to counting the rows returned. Do not treat that field as the playlist length unless `title` is also populated, as it is in the 14-video sample above where `video_count` genuinely is 14.
+On those two the response reads `video_count: 20`. **That is not the playlist's size, it is the number of rows returned.** A channel's uploads playlist (the `UU…` form) is auto-generated and carries no header, so `title` and `views` come back `null` and `video_count` falls back to counting the rows returned. Do not treat that field as the playlist length unless `title` is also populated, as it is in the 14-video sample above where `video_count` genuinely is 14.
 
-If you need a channel's full catalogue, this endpoint will not give it to you. Use [`/youtube/channel`](#5-channel-subscribers-video-listings-and-channel-metadata), which returns 30 per call and has a real cursor.
+For a channel's full catalogue, use [`/youtube/channel`](#5-channel-subscribers-video-listings-and-channel-metadata), which returns 30 per call and has a real cursor.
 
 Runnable: [`youtube_scraper_api_codes/playlist.py`](youtube_scraper_api_codes/playlist.py)
 
@@ -673,8 +667,6 @@ curl "https://api.chocodata.com/api/v1/youtube/shorts?api_key=YOUR_KEY&video_id=
 
 `description: ""` and `keywords: []` are real: Shorts are usually posted with neither, so code against empty rather than expecting text. This id is also the one we used for the live-counter check in the [video section](#2-video-titles-views-likes-descriptions-and-keywords): 69.6M views on a Short published six days earlier, moving +20 in 60 seconds.
 
-**Ceiling:** this takes a Short you already know the id of. It does **not** discover Shorts, and `tab=shorts` on the channel endpoint currently returns nothing (see above), so there is no supported way to enumerate a channel's Shorts through this API today. If discovery is your use case, this is not it yet.
-
 Runnable: [`youtube_scraper_api_codes/shorts.py`](youtube_scraper_api_codes/shorts.py)
 
 ---
@@ -716,7 +708,7 @@ curl "https://api.chocodata.com/api/v1/youtube/suggest?api_key=YOUR_KEY&query=py
 
 The standard move is A-Z expansion: query `python a`, `python b`, ... and union the results, which turns 27 requests into a few hundred real keywords. `expand()` in the example script does exactly that. Note `python cowboy`, `python funk` and `python got7` in there: these are what people search on YouTube, which is a different population from what they search on Google, and that difference is the whole reason to pull this from YouTube rather than a Google keyword tool.
 
-**Ceiling:** 10 suggestions per call, and this is autocomplete, so there is **no search volume attached to any of them**. It gives you the phrases, not the demand. Unlike every other endpoint here, this one is the only one that does not touch a youtube.com page.
+You get 10 suggestions per call, and this is autocomplete, so there is **no search volume attached to any of them**: it gives you the phrases, not the demand. It is also the only endpoint here that does not touch a youtube.com page.
 
 Runnable: [`youtube_scraper_api_codes/suggest.py`](youtube_scraper_api_codes/suggest.py)
 
@@ -755,74 +747,9 @@ UP   Ages 1 - 100 Race For $250,000!                    137,621,262 -> 137,621,2
 
 15 of 30 videos moved in 90 seconds, which is what a 508M-subscriber channel looks like from the outside, and it is also proof these are live reads rather than a cache.
 
-**Read that output critically, because the script is happy to lie to you here.** The `per day` column is a linear extrapolation from the gap between runs, and a 90-second gap extrapolated to 24 hours is noise multiplied by 960: `+14` views became "+13,148 per day". Those rates mean nothing at this interval. Run it hourly or daily, which is what it is for, and the same arithmetic starts being useful. We left the bad numbers in rather than quietly pick a flattering run interval.
+**Read the `per day` column with the run interval in mind.** It is a linear extrapolation from the gap between runs, so a 90-second gap extrapolated to 24 hours is noise multiplied by 960: `+14` views became "+13,148 per day". Those rates mean nothing at this interval. Run it hourly or daily, which is what it is for, and the same arithmetic starts being useful.
 
 One API call per run, per channel: 30 videos tracked for 1 request. 1,000 free requests covers roughly a month of hourly checks on one channel.
-
----
-
-## Build vs buy: what this actually costs
-
-Most scraper READMEs skip this analysis, and the ones that do write it never mention that the vendor has a free official competitor. YouTube does, it is good, and pretending otherwise would be the fastest way to lose your trust.
-
-### First: use Google's official API if it fits
-
-The [YouTube Data API v3](https://developers.google.com/youtube/v3/getting-started) is free, supported, and will not break when YouTube changes its markup. From Google's own quota docs:
-
-> "Projects that enable the YouTube Data API have a default quota allocation of 100 `search.list` calls, 100 `videos.insert` calls, and 10,000 units per day combined for all other endpoints."
-
-`videos.list` costs **1 unit** per call, and its `id` parameter takes a comma-separated list of video ids, so a single call fetches a whole batch. If your job is "I have video ids and I want their metadata", 10,000 units a day is thousands of calls and many more videos than that, free, forever, from Google. `commentThreads.list` and `playlistItems.list` are 1 unit each too. **If that is your use case, use the official API. We would be taking your money for something Google gives you.**
-
-### Where the official API stops
-
-| What you need | Official API | Reality |
-|---|---|---|
-| Search results | `search.list` | **100 calls per day.** It has its own quota bucket, capped at 100/day, and each page of results costs another call. Not 100 results: 100 *calls*. |
-| Transcripts / captions of videos you do not own | `captions.download` | **Not possible.** Google: this method "requires the user to have permission to edit the video". 200 units, and only for your own channel. |
-| Anything at all | any method | Requires a Google Cloud project and an API key; OAuth on top for owner-scoped data. |
-| Quota when you exceed it | quota extension form | An application review, not a checkout page. |
-
-That is the honest split. The official API is excellent at "look up a video I can already identify" and unusable at "search YouTube at scale" or "read the transcript of somebody else's video".
-
-### Building the scraper yourself
-
-| Line item | Realistic estimate | Notes |
-|---|---|---|
-| Initial build | 3 to 5 dev days | Multi-shape parser, the InnerTube hops transcripts and comments need, consent handling, retry, alerting. |
-| Residential proxies | ~$3 to $8/GB retail | The going market rate **if** you need them. We did not measure YouTube from datacenter egress (see above), so price this line for yourself rather than take our word for it. |
-| Bandwidth per request | **~166 KB on the wire** | The search page is ~2.1 MB decoded, which is the number most tables quote and it is the wrong one: it gzips 13.3x and a proxy bills the compressed transfer. Measured 2026-07-16 at 165,828 bytes. At $3 to $8/GB that is **$0.00046 to $0.00124**, which is our own per-request price. |
-| Maintenance | ~1 to 2 days per break | The `ytInitialData` shapes move. Plus the on-call cost of noticing. |
-| Silent-failure risk | hard to price | The expensive failure is not a crash, it is 3 weeks of `[]` that looked like "no results". |
-
-### Buying it
-
-| Plan | Price | Requests | Effective per 1,000 |
-|---|---|---|---|
-| Free | $0 | 1,000 (one-time) | - |
-| Vibe | $19/mo | 27,000/mo | $0.70 |
-| Pro | $49/mo | 82,000/mo | $0.60 |
-| Custom | from $100/mo | from 200,000/mo | $0.50 flat |
-| Pay-as-you-go top-up | $0.90 / 1,000 | never expires | $0.90 |
-
-The comparison that matters: at Pro, a parsed YouTube response costs about **$0.0006**. Now the number that argues against us. The search page is ~2.1 MB decoded, which looks damning until you measure what a proxy actually bills, which is the **compressed** transfer:
-
-```bash
-curl -s -o /dev/null --compressed -w '%{size_download}\n' \
-  "https://www.youtube.com/results?search_query=python"
-# 165828
-```
-
-**165,828 bytes on the wire** (measured 2026-07-16, 13.3x smaller than the decoded page). At $3 to $8/GB retail residential that is **$0.00046 to $0.00124** per fetch, against our $0.0006.
-
-Those are the same number. **Bandwidth alone does not make the case**, and if your proxy is at the cheap end of that range, the raw bytes are cheaper than we are. Anyone who tells you a managed call beats DIY on bytes is quoting a decoded string length and hoping you do not check.
-
-What actually decides it is everything next to the bytes: the 3 to 5 days to build it, the 1 to 2 days every time the `ytInitialData` shapes move, the alerting you have to write to tell "blocked" from "no results", and the weeks of silently empty data you eat when you get that wrong.
-
-So, plainly:
-
-- **Use Google's official API** when you have ids and want metadata, or you own the channel. It is free and it is better than us for that.
-- **Use this API** when you need more than 100 searches a day, transcripts for videos you do not own, comments at volume, or channel listings without a Cloud project.
-- **Build it yourself** when scraping is your product. Buy it when scraping is a dependency of your product.
 
 ---
 
@@ -841,7 +768,7 @@ Real end-to-end wall-clock, measured from a laptop against the live API on 2026-
 | `/youtube/shorts` | 2.5s | 2.1 to 9.5s | 5 |
 | `/youtube/suggest` | 1.2s | 0.9 to 6.2s | 5 |
 
-Read the ranges, not just the medians, and read the `n`. Each endpoint was called 5 times: **`search` and `channel` are `n=4` because one call each came back as a retryable `502`** and we are not going to quietly drop that from the sample. The 12.4s playlist outlier is the same story as the 1.2s one next to it: a request that had to be re-attempted upstream before it came back with real data. Absorbing that, silently, is the thing you are actually buying. Small sample (n=4 to 5); reproduce it yourself with the scripts here.
+Read the ranges, not just the medians, and read the `n`. Each endpoint was called 5 times; **`search` and `channel` are `n=4` because one call each came back as a retryable `502`**, which is excluded from the median. The 12.4s playlist outlier is the same story as the 1.2s one next to it: a request that had to be re-attempted upstream before it came back with real data. Absorbing that, silently, is the thing you are actually buying. Small sample (n=4 to 5); reproduce it yourself with the scripts here.
 
 ---
 
