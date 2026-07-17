@@ -790,7 +790,7 @@ That is the honest split. The official API is excellent at "look up a video I ca
 |---|---|---|
 | Initial build | 3 to 5 dev days | Multi-shape parser, the InnerTube hops transcripts and comments need, consent handling, retry, alerting. |
 | Residential proxies | ~$3 to $8/GB retail | The going market rate **if** you need them. We did not measure YouTube from datacenter egress (see above), so price this line for yourself rather than take our word for it. |
-| Bandwidth per request | **~2 MB of HTML** | Measured, four runs, in this repo. At $5/GB that is roughly **$0.010 per search page** in bandwidth alone. |
+| Bandwidth per request | **~166 KB on the wire** | The search page is ~2.1 MB decoded, which is the number most tables quote and it is the wrong one: it gzips 13.3x and a proxy bills the compressed transfer. Measured 2026-07-16 at 165,828 bytes. At $3 to $8/GB that is **$0.00046 to $0.00124**, which is our own per-request price. |
 | Maintenance | ~1 to 2 days per break | The `ytInitialData` shapes move. Plus the on-call cost of noticing. |
 | Silent-failure risk | hard to price | The expensive failure is not a crash, it is 3 weeks of `[]` that looked like "no results". |
 
