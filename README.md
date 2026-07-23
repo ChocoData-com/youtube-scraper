@@ -408,7 +408,7 @@ curl "https://api.chocodata.com/api/v1/youtube/transcript?api_key=YOUR_KEY&video
 
 A video with no captions is **not an error**. You get `200` with `transcript_available: false` and a `reason` (`transcripts_disabled`, `none_found`, `members_only`, `age_restricted`, `video_unavailable`). Check that field before reading `segments`; the example script does.
 
-Runnable: [`youtube_scraper_api_codes/transcript.py`](youtube_scraper_api_codes/transcript.py)
+Runnable: [`youtube_scraper_api_codes/transcript.py`](youtube_scraper_api_codes/transcript.py) · Single-endpoint repo: [youtube-transcript-scraper](https://github.com/ChocoData-com/youtube-transcript-scraper)
 
 ---
 
@@ -465,7 +465,7 @@ curl "https://api.chocodata.com/api/v1/youtube/comments?api_key=YOUR_KEY&video_i
 
 This endpoint returns 20 comments per call, and `comment_count` is `null` (see the video endpoint note). Pagination is a cursor: pass `next_page_token` back to get the next 20, one call each, so a 4,000-comment export is 200 calls rather than one. Two behaviours to code against: **`sort=newest` may silently fall back to `top`**, because the sort token only exists after the first page loads, so read `sort_applied` in the response rather than assuming you got what you asked for. And a video with comments disabled returns a `502`, not an empty list.
 
-Runnable: [`youtube_scraper_api_codes/comments.py`](youtube_scraper_api_codes/comments.py)
+Runnable: [`youtube_scraper_api_codes/comments.py`](youtube_scraper_api_codes/comments.py) · Single-endpoint repo: [youtube-comments-scraper](https://github.com/ChocoData-com/youtube-comments-scraper)
 
 ---
 
@@ -537,7 +537,7 @@ Note the pair: `subscriber_count: 508000000` next to `subscriber_count_text: "50
 
 You get 30 videos per call from a 992-video channel, then cursor pagination, one call per page. `tab=videos`, `tab=streams` and `tab=about` all return real rows. **`tab=shorts` returns `videos_count: 0`**: we tested @MrBeast, @mkbhd and @fireship, all of which post Shorts, and got zero rows on all three, because the Shorts grid uses a renderer this endpoint does not parse yet.
 
-Runnable: [`youtube_scraper_api_codes/channel.py`](youtube_scraper_api_codes/channel.py)
+Runnable: [`youtube_scraper_api_codes/channel.py`](youtube_scraper_api_codes/channel.py) · Single-endpoint repo: [youtube-channel-scraper](https://github.com/ChocoData-com/youtube-channel-scraper)
 
 ---
 
@@ -667,7 +667,7 @@ curl "https://api.chocodata.com/api/v1/youtube/shorts?api_key=YOUR_KEY&video_id=
 
 `description: ""` and `keywords: []` are real: Shorts are usually posted with neither, so code against empty rather than expecting text. This id is also the one we used for the live-counter check in the [video section](#2-video-titles-views-likes-descriptions-and-keywords): 69.6M views on a Short published six days earlier, moving +20 in 60 seconds.
 
-Runnable: [`youtube_scraper_api_codes/shorts.py`](youtube_scraper_api_codes/shorts.py)
+Runnable: [`youtube_scraper_api_codes/shorts.py`](youtube_scraper_api_codes/shorts.py) · Single-endpoint repo: [youtube-shorts-scraper](https://github.com/ChocoData-com/youtube-shorts-scraper)
 
 ---
 
@@ -710,7 +710,7 @@ The standard move is A-Z expansion: query `python a`, `python b`, ... and union 
 
 You get 10 suggestions per call, and this is autocomplete, so there is **no search volume attached to any of them**: it gives you the phrases, not the demand. It is also the only endpoint here that does not touch a youtube.com page.
 
-Runnable: [`youtube_scraper_api_codes/suggest.py`](youtube_scraper_api_codes/suggest.py)
+Runnable: [`youtube_scraper_api_codes/suggest.py`](youtube_scraper_api_codes/suggest.py) · Single-endpoint repo: [youtube-suggest-scraper](https://github.com/ChocoData-com/youtube-suggest-scraper)
 
 ---
 
